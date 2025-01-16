@@ -66,9 +66,9 @@ GitHub:
 - CN 2024 holidays: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json)
 - JP 2024 holidays: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json)
 
-Gitee:
-- CN 2024 holidays: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json)
-- JP 2024 holidays: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json)
+jsDelivr CDN:
+- CN 2024 holidays: [`https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json`](https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json)
+- JP 2024 holidays: [`https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/JP/2024.json`](https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/JP/2024.json)
 
 URL Pattern:
 
@@ -77,9 +77,9 @@ GitHub:
 https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/{region}/{year}.json
 ```
 
-Gitee:
+jsDelivr CDN:
 ```
-https://gitee.com/cg-zhou/Saturn/raw/main/data/{region}/{year}.json
+https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/{region}/{year}.json
 ```
 
 Example:
@@ -87,8 +87,8 @@ Example:
 # GitHub (Global)
 curl https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json
 
-# Gitee (China)
-curl https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json
+# jsDelivr CDN (Global, China-friendly)
+curl https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json
 ```
 
 ---
@@ -161,9 +161,9 @@ GitHub（国际）:
 - CN 2024 假期数据: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json)
 - JP 2024 假期数据: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json)
 
-Gitee（国内）:
-- CN 2024 假期数据: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json)
-- JP 2024 假期数据: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json)
+jsDelivr CDN（国内友好）:
+- CN 2024 假期数据: [`https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json`](https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json)
+- JP 2024 假期数据: [`https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/JP/2024.json`](https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/JP/2024.json)
 
 URL 格式：
 
@@ -172,9 +172,9 @@ GitHub:
 https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/{region}/{year}.json
 ```
 
-Gitee:
+jsDelivr CDN:
 ```
-https://gitee.com/cg-zhou/Saturn/raw/main/data/{region}/{year}.json
+https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/{region}/{year}.json
 ```
 
 示例：
@@ -182,6 +182,6 @@ https://gitee.com/cg-zhou/Saturn/raw/main/data/{region}/{year}.json
 # GitHub（国际）
 curl https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json
 
-# Gitee（国内）
-curl https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json
+# jsDelivr CDN（国内友好）
+curl https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json
 ```
