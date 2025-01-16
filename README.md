@@ -14,6 +14,9 @@ Saturn is a repository for managing holiday and calendar data, providing standar
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Change Log](CHANGELOG.md)
 
+📄 License:
+- [MIT License](LICENSE)
+
 🌟 Features:
 - Holiday calendars for multiple regions
 - Working day configurations
@@ -60,12 +63,12 @@ All data is stored in JSON format for easy integration:
 Raw file URLs:
 
 GitHub:
-- CN 2024 holidays: `https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json`
-- JP 2024 holidays: `https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json`
+- CN 2024 holidays: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json)
+- JP 2024 holidays: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json)
 
 Gitee:
-- CN 2024 holidays: `https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json`
-- JP 2024 holidays: `https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json`
+- CN 2024 holidays: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json)
+- JP 2024 holidays: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json)
 
 URL Pattern:
 
@@ -105,6 +108,9 @@ Saturn 是一个用于管理假期和日历数据的仓库，为不同地区和�
 📝 文档：
 - [贡献指南](CONTRIBUTING.md)
 - [更新日志](CHANGELOG.md)
+
+📄 许可证：
+- [MIT 许可证](LICENSE)
 
 🌟 特性：
 - 支持多区域的假期日历
@@ -152,21 +158,21 @@ Saturn 是一个用于管理假期和日历数据的仓库，为不同地区和�
 原始文件链接：
 
 GitHub（国际）:
-- CN 2024 假期数据: `https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json`
-- JP 2024 假期数据: `https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json`
+- CN 2024 假期数据: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/CN/2024.json)
+- JP 2024 假期数据: [`https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json`](https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/JP/2024.json)
 
 Gitee（国内）:
-- CN 2024 假期数据: `https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json`
-- JP 2024 假期数据: `https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json`
+- CN 2024 假期数据: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/CN/2024.json)
+- JP 2024 假期数据: [`https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json`](https://gitee.com/cg-zhou/Saturn/raw/main/data/JP/2024.json)
 
 URL 格式：
 
-GitHub（国际）:
+GitHub:
 ```
 https://raw.githubusercontent.com/cg-zhou/Saturn/main/data/{region}/{year}.json
 ```
 
-Gitee（国内）:
+Gitee:
 ```
 https://gitee.com/cg-zhou/Saturn/raw/main/data/{region}/{year}.json
 ```
