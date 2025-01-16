@@ -1,0 +1,258 @@
+{
+  "year": 2024,
+  "region": "CN",
+  "holidays": [
+    {
+      "date": "2024-01-01",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-04",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-02-10",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-11",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-12",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-13",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-14",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-15",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-16",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-17",
+      "name": "Chinese New Year",
+      "name_cn": "春节",
+      "name_en": "Chinese New Year",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-18",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-04-04",
+      "name": "Tomb-Sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-Sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-04-05",
+      "name": "Tomb-Sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-Sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-04-06",
+      "name": "Tomb-Sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-Sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-04-07",
+      "name": "Tomb-Sweeping Day Workday",
+      "name_cn": "清明节补班",
+      "name_en": "Tomb-Sweeping Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-04-28",
+      "name": "Labor Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labor Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-05-01",
+      "name": "Labor Day",
+      "name_cn": "劳动节",
+      "name_en": "Labor Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-02",
+      "name": "Labor Day",
+      "name_cn": "劳动节",
+      "name_en": "Labor Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-03",
+      "name": "Labor Day",
+      "name_cn": "劳动节",
+      "name_en": "Labor Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-04",
+      "name": "Labor Day",
+      "name_cn": "劳动节",
+      "name_en": "Labor Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-05",
+      "name": "Labor Day",
+      "name_cn": "劳动节",
+      "name_en": "Labor Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-11",
+      "name": "Labor Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labor Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-06-10",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-14",
+      "name": "Mid-Autumn Festival Workday",
+      "name_cn": "中秋节补班",
+      "name_en": "Mid-Autumn Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-09-15",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-16",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-17",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-29",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2024-10-01",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-02",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-03",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-04",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-05",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-06",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-07",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-12",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    }
+  ]
+} 

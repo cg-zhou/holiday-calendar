@@ -1,0 +1,153 @@
+{
+  "year": 2024,
+  "region": "JP",
+  "holidays": [
+    {
+      "date": "2024-01-01",
+      "name": "元日",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-01-08",
+      "name": "成人の日",
+      "name_cn": "成人节",
+      "name_en": "Coming of Age Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-11",
+      "name": "建国記念の日",
+      "name_cn": "建国纪念日",
+      "name_en": "National Foundation Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-12",
+      "name": "建国記念の日 振替休日",
+      "name_cn": "建国纪念日补假",
+      "name_en": "National Foundation Day Transfer Holiday",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-02-23",
+      "name": "天皇誕生日",
+      "name_cn": "天皇诞生日",
+      "name_en": "Emperor's Birthday",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-03-20",
+      "name": "春分の日",
+      "name_cn": "春分日",
+      "name_en": "Vernal Equinox Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-04-29",
+      "name": "昭和の日",
+      "name_cn": "昭和日",
+      "name_en": "Showa Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-03",
+      "name": "憲法記念日",
+      "name_cn": "宪法纪念日",
+      "name_en": "Constitution Memorial Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-04",
+      "name": "みどりの日",
+      "name_cn": "绿色日",
+      "name_en": "Greenery Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-05",
+      "name": "こどもの日",
+      "name_cn": "儿童节",
+      "name_en": "Children's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-05-06",
+      "name": "こどもの日 振替休日",
+      "name_cn": "儿童节补假",
+      "name_en": "Children's Day Transfer Holiday",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-07-15",
+      "name": "海の日",
+      "name_cn": "海洋日",
+      "name_en": "Marine Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-08-11",
+      "name": "山の日",
+      "name_cn": "山之日",
+      "name_en": "Mountain Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-08-12",
+      "name": "休日 山の日",
+      "name_cn": "山之日补假",
+      "name_en": "Mountain Day Holiday",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-16",
+      "name": "敬老の日",
+      "name_cn": "敬老日",
+      "name_en": "Respect for the Aged Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-22",
+      "name": "秋分の日",
+      "name_cn": "秋分日",
+      "name_en": "Autumnal Equinox Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-09-23",
+      "name": "秋分の日 振替休日",
+      "name_cn": "秋分日补假",
+      "name_en": "Autumnal Equinox Day Transfer Holiday",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-10-14",
+      "name": "スポーツの日",
+      "name_cn": "体育日",
+      "name_en": "Sports Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-11-03",
+      "name": "文化の日",
+      "name_cn": "文化日",
+      "name_en": "Culture Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-11-04",
+      "name": "文化の日 振替休日",
+      "name_cn": "文化日补假",
+      "name_en": "Culture Day Transfer Holiday",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2024-11-23",
+      "name": "勤労感謝の日",
+      "name_cn": "勤劳感谢日",
+      "name_en": "Labor Thanksgiving Day",
+      "type": "public_holiday"
+    }
+  ]
+} 
