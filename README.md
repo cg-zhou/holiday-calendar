@@ -4,7 +4,7 @@
 
 > Saturn represents our love for Saturdays.
 
-Saturn is a repository for managing holiday and calendar data, providing standardized date information for various regions and calendar systems.
+A standardized holiday dataset (in JSON format) providing public holidays and working day adjustments for different regions.
 
 📦 Repository Mirrors:
 - GitHub: [cg-zhou/Saturn](https://github.com/cg-zhou/Saturn)
@@ -99,7 +99,7 @@ curl https://cdn.jsdelivr.net/gh/cg-zhou/Saturn@main/data/CN/2024.json
 
 > Saturn 代表着我们对周六（Saturday）的热爱。
 
-Saturn 是一个用于管理假期和日历数据的仓库，为不同地区和日历系统提供标准化的日期信息。
+标准化的节假日数据集（JSON格式），提供各个地区的法定节假日和调休安排信息。
 
 📦 仓库镜像：
 - GitHub（国际）: [cg-zhou/Saturn](https://github.com/cg-zhou/Saturn)
