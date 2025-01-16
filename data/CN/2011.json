@@ -1,0 +1,230 @@
+{
+  "year": 2011,
+  "region": "CN",
+  "holidays": [
+    {
+      "date": "2011-01-01",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-01-02",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-01-03",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-01-30",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2011-02-02",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-03",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-04",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-05",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-06",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-07",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-08",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-02-12",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2011-04-02",
+      "name": "Tomb-sweeping Day Workday",
+      "name_cn": "清明节补班",
+      "name_en": "Tomb-sweeping Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2011-04-03",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-04-04",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-04-05",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-04-30",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-05-01",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-05-02",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-06-04",
+      "name": "Dragon Boat Festival Workday",
+      "name_cn": "端午节补班",
+      "name_en": "Dragon Boat Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2011-06-06",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-09-10",
+      "name": "Mid-Autumn Festival Workday",
+      "name_cn": "中秋节补班",
+      "name_en": "Mid-Autumn Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2011-09-12",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-01",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-02",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-03",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-04",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-05",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-06",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-07",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-10-08",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2011-10-09",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    }
+  ]
+} 

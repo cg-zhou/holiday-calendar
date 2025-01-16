@@ -1,0 +1,272 @@
+{
+  "year": 2021,
+  "region": "CN",
+  "holidays": [
+    {
+      "date": "2021-01-01",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-01-02",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-01-03",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-07",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2021-02-11",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-12",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-13",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-14",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-15",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-16",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-17",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-02-20",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2021-04-03",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-04-04",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-04-05",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-04-25",
+      "name": "Labour Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2021-05-01",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-05-02",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-05-03",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-05-04",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-05-05",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-05-08",
+      "name": "Labour Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2021-06-12",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-06-13",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-06-14",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-09-18",
+      "name": "Mid-Autumn Festival Workday",
+      "name_cn": "中秋节补班",
+      "name_en": "Mid-Autumn Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2021-09-19",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-09-20",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-09-21",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-09-26",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2021-10-01",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-02",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-03",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-04",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-05",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-06",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-07",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2021-10-09",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    }
+  ]
+} 

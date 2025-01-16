@@ -10,5 +10,6 @@ All notable changes to this project will be documented in this file.
 - Added documentation (README.md, CONTRIBUTING.md)
 - Added data format specification
 - Added multi-language support (English/Chinese)
-- Added China holidays data for 2024-2025
-- Added Japan holidays data for 2024-2026
+- Added China holidays data for 2002-2025
+- Added Japan holidays data for 2000-2026
+- Added jsDelivr CDN support

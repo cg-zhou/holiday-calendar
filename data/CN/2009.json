@@ -1,0 +1,223 @@
+{
+  "year": 2009,
+  "region": "CN",
+  "holidays": [
+    {
+      "date": "2009-01-01",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-02",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-03",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-24",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2009-01-25",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-26",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-27",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-28",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-29",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-30",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-01-31",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-02-01",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2009-04-04",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-04-05",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-04-06",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-01",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-02",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-03",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-28",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-29",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-30",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-05-31",
+      "name": "Dragon Boat Festival Workday",
+      "name_cn": "端午节补班",
+      "name_en": "Dragon Boat Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2009-10-01",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-02",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-03",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-04",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-05",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-06",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-07",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-08",
+      "name": "National Day & Mid-Autumn Festival",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2009-10-10",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    }
+  ]
+} 

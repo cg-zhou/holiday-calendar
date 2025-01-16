@@ -1,0 +1,230 @@
+{
+  "year": 2012,
+  "region": "CN",
+  "holidays": [
+    {
+      "date": "2012-01-01",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-02",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-03",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-21",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2012-01-22",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-23",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-24",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-25",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-26",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-27",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-28",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-01-29",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2012-03-31",
+      "name": "Tomb-sweeping Day Workday",
+      "name_cn": "清明节补班",
+      "name_en": "Tomb-sweeping Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2012-04-02",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-04-03",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-04-04",
+      "name": "Tomb-sweeping Day",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-04-28",
+      "name": "Labour Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2012-04-29",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-04-30",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-05-01",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-06-22",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-06-23",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-06-24",
+      "name": "Dragon Boat Festival",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-09-29",
+      "name": "Mid-Autumn Festival Workday",
+      "name_cn": "中秋节补班",
+      "name_en": "Mid-Autumn Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2012-09-30",
+      "name": "Mid-Autumn Festival",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-01",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-02",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-03",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-04",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-05",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-06",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2012-10-07",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    }
+  ]
+} 

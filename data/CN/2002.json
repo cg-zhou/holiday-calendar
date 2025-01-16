@@ -1,0 +1,230 @@
+{
+  "year": 2002,
+  "region": "CN",
+  "holidays": [
+    {
+      "date": "2002-01-01",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-01-02",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-01-03",
+      "name": "New Year's Day",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-12-29",
+      "name": "New Year's Day Workday",
+      "name_cn": "元旦补班",
+      "name_en": "New Year's Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-12-30",
+      "name": "New Year's Day Workday",
+      "name_cn": "元旦补班",
+      "name_en": "New Year's Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-02-09",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-02-10",
+      "name": "Spring Festival Workday",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-02-12",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-02-13",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-02-14",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-02-15",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-02-16",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-02-17",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-02-18",
+      "name": "Spring Festival",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-04-27",
+      "name": "Labour Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-04-28",
+      "name": "Labour Day Workday",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-05-01",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-05-02",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-05-03",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-05-04",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-05-05",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-05-06",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-05-07",
+      "name": "Labour Day",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-09-28",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-09-29",
+      "name": "National Day Workday",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2002-10-01",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-10-02",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-10-03",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-10-04",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-10-05",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-10-06",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2002-10-07",
+      "name": "National Day",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    }
+  ]
+} 
