@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.5] - 2025-01-18
+
+### Changed
+- Updated data structure: renamed 'holidays' field to 'dates'
+- Improved test coverage with specific date assertions
+
 ## [1.0.4] - 2025-01-18
 
 ### Changed

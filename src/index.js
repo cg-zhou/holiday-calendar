@@ -1,8 +1,28 @@
 class HolidayCalendar {
   constructor(options = {}) {
-    this.version = '1.0.3';
+    this.version = '1.0.5';
     this.cache = new Map();
-    this.baseUrl = options.baseUrl || 'https://unpkg.com/holiday-calendar/data';
+    this.dataLoader = options.dataLoader || this.defaultDataLoader;
+  }
+
+  /**
+   * Default data loader that fetches data from CDN
+   * @param {string} region - Region code (e.g., 'CN', 'JP')
+   * @param {number} year - Year to load
+   * @returns {Promise<Object>} Holiday data
+   */
+  async defaultDataLoader(region, year) {
+    const baseUrl = 'https://unpkg.com/holiday-calendar/data';
+    const url = `${baseUrl}/${region}/${year}.json`;
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    } catch (error) {
+      throw new Error(`Failed to load date data for ${region} ${year}: ${error.message}`);
+    }
   }
 
   /**
@@ -18,19 +38,9 @@ class HolidayCalendar {
       return this.cache.get(cacheKey);
     }
 
-    const url = `${this.baseUrl}/${region}/${year}.json`;
-    
-    try {
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      this.cache.set(cacheKey, data);
-      return data;
-    } catch (error) {
-      throw new Error(`Failed to load holiday data for ${region} ${year}: ${error.message}`);
-    }
+    const data = await this.dataLoader(region, year);
+    this.cache.set(cacheKey, data);
+    return data;
   }
 
   /**
