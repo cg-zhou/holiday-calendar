@@ -99,8 +99,8 @@
       
       // Get holiday data for different regions
       const [cnDates, jpDates] = await Promise.all([
-        calendar.getHolidays('CN', currentYear),
-        calendar.getHolidays('JP', currentYear)
+        calendar.getDates('CN', currentYear),
+        calendar.getDates('JP', currentYear)
       ]);
 
       // Save original data
@@ -146,8 +146,8 @@
       async function loadYearData(year) {
         try {
           const [cnDates, jpDates] = await Promise.all([
-            calendar.getHolidays('CN', year),
-            calendar.getHolidays('JP', year)
+            calendar.getDates('CN', year),
+            calendar.getDates('JP', year)
           ]);
           
           holidayData.CN = cnDates;

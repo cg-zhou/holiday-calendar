@@ -79,15 +79,15 @@ calendar.getDateInfo('CN', '2024-01-01').then(dateInfo => {
 });
 
 // 获取指定年份的所有日期
-calendar.getHolidays('CN', 2024).then(dates => {
-  console.log('2024年日期:', dates);
+calendar.getDates('CN', 2025).then(dates => {
+  console.log('2025年日期:', dates);
 });
 
-// 使用过滤条件获取日期
-calendar.getHolidays('CN', 2024, {
+// 使用过滤器
+calendar.getDates('CN', 2025, {
   type: 'public_holiday',           // 按类型过滤：'public_holiday'(法定节假日) 或 'transfer_workday'(调休工作日)
-  startDate: '2024-01-01',         // 按开始日期过滤
-  endDate: '2024-12-31'           // 按结束日期过滤
+  startDate: '2025-01-01',         // 按开始日期过滤
+  endDate: '2025-12-31'           // 按结束日期过滤
 }).then(dates => {
   console.log('过滤后的日期:', dates);
 });
@@ -207,15 +207,15 @@ calendar.getDateInfo('CN', '2024-01-01').then(dateInfo => {
 });
 
 // Get all dates for a specific year
-calendar.getHolidays('CN', 2024).then(dates => {
-  console.log('2024 Dates:', dates);
+calendar.getDates('CN', 2025).then(dates => {
+  console.log('2025 Dates:', dates);
 });
 
 // Get dates with filters
-calendar.getHolidays('CN', 2024, {
+calendar.getDates('CN', 2025, {
   type: 'public_holiday',           // Filter by type: 'public_holiday' or 'transfer_workday'
-  startDate: '2024-01-01',         // Filter by start date
-  endDate: '2024-12-31'           // Filter by end date
+  startDate: '2025-01-01',         // Filter by start date
+  endDate: '2025-12-31'           // Filter by end date
 }).then(dates => {
   console.log('Filtered dates:', dates);
 });

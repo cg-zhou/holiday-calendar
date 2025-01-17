@@ -1,6 +1,6 @@
 class HolidayCalendar {
   constructor(options = {}) {
-    this.version = '1.0.5';
+    this.version = '1.1.2';
     this.cache = new Map();
     this.dataLoader = options.dataLoader || this.defaultDataLoader;
   }
@@ -53,7 +53,7 @@ class HolidayCalendar {
    * @param {string} [options.endDate] - Filter by end date (YYYY-MM-DD)
    * @returns {Promise<Array>} Filtered dates
    */
-  async getHolidays(region, year, options = {}) {
+  async getDates(region, year, options = {}) {
     const data = await this.load(region, year);
     let dates = data.dates;
 
@@ -80,7 +80,7 @@ class HolidayCalendar {
    */
   async getDateInfo(region, date) {
     const year = parseInt(date.slice(0, 4));
-    const dates = await this.getHolidays(region, year);
+    const dates = await this.getDates(region, year);
     return dates.find(h => h.date === date) || null;
   }
 }

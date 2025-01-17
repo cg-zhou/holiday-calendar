@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2025-01-18
+
+### Changed
+- Updated documentation
+
+## [1.1.1] - 2025-01-18
+
+### Changed
+- Updated documentation to reflect API changes
+
+## [1.1.0] - 2025-01-18
+
+### Changed
+- **Breaking**: Renamed method `getHolidays` to `getDates` for better API consistency
+- Updated data structure: renamed 'holidays' field to 'dates'
+- Improved test coverage with specific date assertions
+- Added support for custom data loaders
+
 ## [1.0.5] - 2025-01-18
 
 ### Changed

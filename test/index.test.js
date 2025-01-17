@@ -31,7 +31,7 @@ async function runTests() {
 
     // Test getting dates
     console.log('Testing date filtering...');
-    const dates = await calendar.getHolidays('CN', 2024, { type: 'public_holiday' });
+    const dates = await calendar.getDates('CN', 2024, { type: 'public_holiday' });
     assert(Array.isArray(dates), 'Filtered dates should be an array');
     assert(dates.every(h => h.type === 'public_holiday'), 'All dates should be public holidays');
 
