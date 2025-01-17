@@ -4,227 +4,227 @@
   "holidays": [
     {
       "date": "2018-12-29",
-      "name": "New Year's Day Workday",
+      "name": "元旦补班",
       "name_cn": "元旦补班",
       "name_en": "New Year's Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2018-12-30",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2018-12-31",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-01-01",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-02",
-      "name": "Spring Festival Workday",
+      "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2019-02-03",
-      "name": "Spring Festival Workday",
+      "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2019-02-04",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-05",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-06",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-07",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-08",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-09",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-02-10",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-04-05",
-      "name": "Tomb-sweeping Day",
+      "name": "清明节",
       "name_cn": "清明节",
       "name_en": "Tomb-sweeping Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-04-06",
-      "name": "Tomb-sweeping Day",
+      "name": "清明节",
       "name_cn": "清明节",
       "name_en": "Tomb-sweeping Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-04-07",
-      "name": "Tomb-sweeping Day",
+      "name": "清明节",
       "name_cn": "清明节",
       "name_en": "Tomb-sweeping Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-05-01",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-06-07",
-      "name": "Dragon Boat Festival",
+      "name": "端午节",
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-06-08",
-      "name": "Dragon Boat Festival",
+      "name": "端午节",
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-06-09",
-      "name": "Dragon Boat Festival",
+      "name": "端午节",
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-09-13",
-      "name": "Mid-Autumn Festival",
+      "name": "中秋节",
       "name_cn": "中秋节",
       "name_en": "Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-09-14",
-      "name": "Mid-Autumn Festival",
+      "name": "中秋节",
       "name_cn": "中秋节",
       "name_en": "Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-09-15",
-      "name": "Mid-Autumn Festival",
+      "name": "中秋节",
       "name_cn": "中秋节",
       "name_en": "Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2019-09-29",
-      "name": "National Day Workday",
+      "name": "国庆节补班",
       "name_cn": "国庆节补班",
       "name_en": "National Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2019-10-01",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-02",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-03",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-04",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-05",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-06",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-07",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2019-10-12",
-      "name": "National Day Workday",
+      "name": "国庆节补班",
       "name_cn": "国庆节补班",
       "name_en": "National Day Workday",
       "type": "transfer_workday"
     }
   ]
-} 
+}

@@ -1,0 +1,45 @@
+{
+  "name": "holiday-calendar",
+  "version": "1.0.3",
+  "description": "A standardized holiday dataset providing public holidays and working day adjustments for different regions",
+  "main": "src/index.js",
+  "browser": "src/index.js",
+  "files": [
+    "src",
+    "data"
+  ],
+  "scripts": {
+    "test": "node test/index.test.js",
+    "lint": "eslint src",
+    "build:js": "terser src/index.js -c -m -o src/index.min.js",
+    "build:json": "node scripts/minify-json.js",
+    "build": "npm run build:js && npm run build:json",
+    "prepare": "npm run build && npm run test"
+  },
+  "keywords": [
+    "holiday",
+    "calendar",
+    "workday",
+    "dataset",
+    "json",
+    "browser",
+    "web"
+  ],
+  "author": "cg-zhou",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cg-zhou/holiday-calendar.git"
+  },
+  "homepage": "https://github.com/cg-zhou/holiday-calendar#readme",
+  "bugs": {
+    "url": "https://github.com/cg-zhou/holiday-calendar/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "terser": "^5.27.0"
+  }
+}

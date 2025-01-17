@@ -1,6 +1,6 @@
-# Contributing to Saturn
+# Contributing to holiday-calendar
 
-Thank you for your interest in contributing to Saturn! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to holiday-calendar! This document provides guidelines and instructions for contributing.
 
 ## How to Contribute
 

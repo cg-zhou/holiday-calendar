@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build
+dist/
+*.min.js
+*.min.json
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# System Files
+.DS_Store
+Thumbs.db 

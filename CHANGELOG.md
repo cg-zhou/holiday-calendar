@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2025-01-17
+
+### Changed
+- Updated default baseUrl to use unpkg CDN
+
+## [1.0.2] - 2025-01-17
+
+### Changed
+- Updated CN region data format: 'name' field now uses Chinese text (same as name_cn)
+
+## [1.0.1] - 2025-01-17
+
+### Changed
+- Optimized package size by adding .min.js and .min.json files
+- Updated documentation with CDN examples
+
 ## [1.0.0] - 2025-01-16
 
 ### Added

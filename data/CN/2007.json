@@ -4,227 +4,227 @@
   "holidays": [
     {
       "date": "2007-01-01",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-01-02",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-01-03",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2006-12-30",
-      "name": "New Year's Day Workday",
+      "name": "元旦补班",
       "name_cn": "元旦补班",
       "name_en": "New Year's Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2006-12-31",
-      "name": "New Year's Day Workday",
+      "name": "元旦补班",
       "name_cn": "元旦补班",
       "name_en": "New Year's Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-02-17",
-      "name": "Spring Festival Workday",
+      "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-02-18",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-19",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-20",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-21",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-22",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-23",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-24",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2007-02-25",
-      "name": "Spring Festival Workday",
+      "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-04-28",
-      "name": "Labour Day Workday",
+      "name": "劳动节补班",
       "name_cn": "劳动节补班",
       "name_en": "Labour Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-04-29",
-      "name": "Labour Day Workday",
+      "name": "劳动节补班",
       "name_cn": "劳动节补班",
       "name_en": "Labour Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-05-01",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-05-02",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-05-03",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-05-04",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-05-05",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-05-06",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-05-07",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-09-29",
-      "name": "National Day Workday",
+      "name": "国庆节补班",
       "name_cn": "国庆节补班",
       "name_en": "National Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-09-30",
-      "name": "National Day Workday",
+      "name": "国庆节补班",
       "name_cn": "国庆节补班",
       "name_en": "National Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2007-10-01",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-10-02",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-10-03",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-10-04",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-10-05",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-10-06",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2007-10-07",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     }
   ]
-} 
+}

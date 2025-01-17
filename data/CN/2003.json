@@ -4,213 +4,213 @@
   "holidays": [
     {
       "date": "2003-01-01",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-01-02",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-01-03",
-      "name": "New Year's Day",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-01",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-02",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-03",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-04",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-05",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-06",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-02-07",
-      "name": "Spring Festival",
+      "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
       "type": "public_holiday"
     },
     {
       "date": "2003-01-26",
-      "name": "Spring Festival Workday",
+      "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2003-02-08",
-      "name": "Spring Festival Workday",
+      "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2003-05-01",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-05-02",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-05-03",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-05-04",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-05-05",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-05-06",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-05-07",
-      "name": "Labour Day",
+      "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-04-27",
-      "name": "Labour Day Workday",
+      "name": "劳动节补班",
       "name_cn": "劳动节补班",
       "name_en": "Labour Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2003-05-10",
-      "name": "Labour Day Workday",
+      "name": "劳动节补班",
       "name_cn": "劳动节补班",
       "name_en": "Labour Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2003-10-01",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-10-02",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-10-03",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-10-04",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-10-05",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-10-06",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-10-07",
-      "name": "National Day",
+      "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
       "type": "public_holiday"
     },
     {
       "date": "2003-09-28",
-      "name": "National Day Workday",
+      "name": "国庆节补班",
       "name_cn": "国庆节补班",
       "name_en": "National Day Workday",
       "type": "transfer_workday"
     },
     {
       "date": "2003-10-11",
-      "name": "National Day Workday",
+      "name": "国庆节补班",
       "name_cn": "国庆节补班",
       "name_en": "National Day Workday",
       "type": "transfer_workday"
     }
   ]
-} 
+}

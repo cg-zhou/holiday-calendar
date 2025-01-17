@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Calendar Demo</title>
+  
+  <!-- FullCalendar CSS -->
+  <link href='https://unpkg.com/@fullcalendar/core@6.1.10/main.min.css' rel='stylesheet' />
+  <link href='https://unpkg.com/@fullcalendar/daygrid@6.1.10/main.min.css' rel='stylesheet' />
+  
+  <style>
+    body {
+      margin: 40px;
+      font-family: Arial, sans-serif;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    /* Language switcher styles */
+    .controls {
+      max-width: 900px;
+      margin: 0 auto 20px;
+      text-align: right;
+    }
+    .controls select {
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      margin-left: 10px;
+    }
+    /* Region-specific colors */
+    .holiday-CN {
+      background-color: #FF9F89 !important;
+      border-color: #FF8370 !important;
+    }
+    .holiday-JP {
+      background-color: #90CAF9 !important;
+      border-color: #64B5F6 !important;
+    }
+    /* Transfer workday styles */
+    .transfer-workday {
+      background-color: #FFB74D !important;
+      border-color: #FFA726 !important;
+    }
+    /* Event style optimization */
+    .fc-event {
+      border-radius: 3px;
+      padding: 2px 5px;
+    }
+    .fc-event-title {
+      font-weight: normal;
+      font-size: 0.9em;
+    }
+    /* Weekend background color */
+    .fc-day-sat, .fc-day-sun {
+      background-color: #f8f9fa !important;
+    }
+    /* Override weekend background for workdays */
+    .fc-day-sat.has-workday, .fc-day-sun.has-workday {
+      background-color: #fff !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Language switcher control -->
+  <div class="controls">
+    <label>Holiday Name Language:</label>
+    <select id="langSelect">
+      <option value="name">Default</option>
+      <option value="name_en">English</option>
+      <option value="name_cn">中文</option>
+    </select>
+  </div>
+  
+  <div id='calendar'></div>
+
+  <!-- Required libraries -->
+  <script src='https://unpkg.com/@fullcalendar/core@6.1.10/index.global.min.js'></script>
+  <script src='https://unpkg.com/@fullcalendar/daygrid@6.1.10/index.global.min.js'></script>
+  <script src="https://unpkg.com/holiday-calendar/src/index.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async function() {
+      const calendar = new HolidayCalendar();
+      let fc; // Calendar instance
+      let holidayData = { CN: [], JP: [] }; // Store original holiday data
+      
+      // Get current year
+      const currentYear = new Date().getFullYear();
+      
+      // Get holiday data for different regions
+      const [cnHolidays, jpHolidays] = await Promise.all([
+        calendar.getHolidays('CN', currentYear),
+        calendar.getHolidays('JP', currentYear)
+      ]);
+
+      // Save original data
+      holidayData.CN = cnHolidays;
+      holidayData.JP = jpHolidays;
+
+      // Convert holiday data to calendar events
+      function convertToEvents(holidays, region, langKey = 'name') {
+        return holidays.map(holiday => ({
+          title: `[${region}] ${holiday[langKey]}`,
+          start: holiday.date,
+          className: holiday.type === 'transfer_workday' ? 'transfer-workday' : `holiday-${region}`,
+          extendedProps: {
+            region: region,
+            type: holiday.type,
+            names: {
+              default: holiday.name,
+              en: holiday.name_en,
+              cn: holiday.name_cn
+            }
+          }
+        }));
+      }
+
+      // Update calendar events
+      function updateEvents(langKey) {
+        const events = [
+          ...convertToEvents(holidayData.CN, 'CN', langKey),
+          ...convertToEvents(holidayData.JP, 'JP', langKey)
+        ];
+        fc.removeAllEvents();
+        fc.addEventSource(events);
+      }
+
+      // Load holiday data for specific year
+      async function loadYearData(year) {
+        try {
+          const [cnHolidays, jpHolidays] = await Promise.all([
+            calendar.getHolidays('CN', year),
+            calendar.getHolidays('JP', year)
+          ]);
+          
+          holidayData.CN = cnHolidays;
+          holidayData.JP = jpHolidays;
+          
+          // Update display with current language setting
+          const langSelect = document.getElementById('langSelect');
+          updateEvents(langSelect.value);
+        } catch (error) {
+          console.error('Failed to load holiday data:', error);
+        }
+      }
+
+      // Listen for language changes
+      document.getElementById('langSelect').addEventListener('change', function(e) {
+        updateEvents(e.target.value);
+      });
+
+      // Get transfer workday dates
+      function getWorkdayDates() {
+        const workdays = new Set();
+        [...holidayData.CN, ...holidayData.JP].forEach(holiday => {
+          if (holiday.type === 'transfer_workday') {
+            workdays.add(holiday.date);
+          }
+        });
+        return workdays;
+      }
+
+      // Initialize calendar
+      const calendarEl = document.getElementById('calendar');
+      fc = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,dayGridWeek'
+        },
+        events: [
+          ...convertToEvents(cnHolidays, 'CN', 'name'),
+          ...convertToEvents(jpHolidays, 'JP', 'name')
+        ],
+        datesSet: function(info) {
+          // Check and load data when view changes (including month/year changes)
+          const viewYear = info.view.currentStart.getFullYear();
+          if (!holidayData.CN.some(h => h.date.startsWith(viewYear)) ||
+              !holidayData.JP.some(h => h.date.startsWith(viewYear))) {
+            loadYearData(viewYear);
+          }
+        },
+        eventDidMount: function(info) {
+          // Add tooltip showing all language versions
+          const names = info.event.extendedProps.names;
+          info.el.title = `Default: ${names.default}\nEnglish: ${names.en}\n中文: ${names.cn}\nType: ${info.event.extendedProps.type}`;
+          
+          // Add marker for transfer workdays
+          if (info.event.extendedProps.type === 'transfer_workday') {
+            const dateCell = fc.el.querySelector(`.fc-day[data-date="${info.event.startStr}"]`);
+            if (dateCell) {
+              dateCell.classList.add('has-workday');
+            }
+          }
+        },
+        dayCellDidMount: function(info) {
+          // Add special class for weekends (background color set via CSS)
+          if (info.date.getDay() === 0 || info.date.getDay() === 6) {
+            info.el.classList.add('weekend');
+          }
+        }
+      });
+
+      fc.render();
+    });
+  </script>
+</body>
+</html>
