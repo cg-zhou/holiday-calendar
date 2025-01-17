@@ -1,75 +1,43 @@
-# holiday-calendar
+# holiday-calendar 假期日历
 
-> [中文文档](#holiday-calendar-假期日历)
+> [English Documentation](#holiday-calendar-english)
 
-A standardized holiday dataset (in JSON format) providing public holidays and working day adjustments for different regions.
+[![npm version](https://img.shields.io/npm/v/holiday-calendar.svg)](https://www.npmjs.com/package/holiday-calendar)
+[![GitHub license](https://img.shields.io/github/license/cg-zhou/holiday-calendar.svg)](https://github.com/cg-zhou/holiday-calendar/blob/main/LICENSE)
 
-## Installation
+标准化的节假日数据集（JSON格式），提供各个地区的法定节假日和调休安排信息。
+
+## 概述
+
+本仓库作为以下数据的集中存储：
+- 📅 法定节假日
+- 🏢 调休工作日
+
+## 数据来源
+
+数据来源于各地区官方发布的节假日安排：
+
+- 中国（CN）：
+  - [国务院办公厅](http://www.gov.cn)关于节假日安排的通知
+  - 更新频率：每年更新，通常在上一年末发布下一年安排
+
+- 日本（JP）：
+  - [内閣府](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html)「国民の祝日」
+  - 更新频率：每年更新，通常提前一年发布
+
+## 安装
 
 ```bash
 npm install holiday-calendar
 ```
 
-## Usage
+## 数据格式
 
-```javascript
-// Import the package
-const HolidayCalendar = require('holiday-calendar');
+所有数据以 JSON 格式存储，便于集成：
 
-// Create an instance
-const calendar = new HolidayCalendar();
-
-// Check if a date is a holiday
-calendar.isHoliday('CN', '2024-01-01').then(holiday => {
-  if (holiday) {
-    console.log(`${holiday.date} is ${holiday.name_en}`);
-  }
-});
-
-// Get all holidays for a specific year
-calendar.getHolidays('CN', 2024).then(holidays => {
-  console.log('2024 Holidays:', holidays);
-});
-
-// Get holidays with filters
-calendar.getHolidays('CN', 2024, {
-  type: 'public_holiday',           // Filter by type: 'public_holiday' or 'transfer_workday'
-  startDate: '2024-01-01',         // Filter by start date
-  endDate: '2024-12-31'           // Filter by end date
-}).then(holidays => {
-  console.log('Filtered holidays:', holidays);
-});
-```
-
-## Links
-
-- GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
-- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
-
-📝 Documentation:
-- [Contributing Guidelines](CONTRIBUTING.md)
-- [Change Log](CHANGELOG.md)
-
-📄 License:
-- [MIT License](LICENSE)
-
-🌟 Features:
-- Holiday calendars for multiple regions
-- Working day configurations
-
-## Overview
-
-This repository serves as a centralized data source for:
-- 📅 Public holidays
-- 🏢 Working days
-
-## Data Format
-
-All data is stored in JSON format for easy integration:
-
-### Holiday Types
-- `public_holiday`: Official public holidays
-- `transfer_workday`: Transferred working day, usually a weekend that becomes a workday
+### 假期类型
+- `public_holiday`: 法定节假日
+- `transfer_workday`: 调休工作日（因节假日调整而需要补班的日期）
 
 ``` json
 {
@@ -92,81 +60,6 @@ All data is stored in JSON format for easy integration:
     }
   ]
 }
-```
-
-## Data Access
-
-Raw file URLs:
-
-GitHub:
-- CN 2024 holidays: [`https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/CN/2024.json`](https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/CN/2024.json)
-- JP 2024 holidays: [`https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/JP/2024.json`](https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/JP/2024.json)
-
-jsDelivr CDN:
-- CN 2024 holidays: [`https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json`](https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json)
-- JP 2024 holidays: [`https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/JP/2024.json`](https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/JP/2024.json)
-
-URL Pattern:
-
-GitHub:
-```
-https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/{region}/{year}.json
-```
-
-jsDelivr CDN:
-```
-https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/{region}/{year}.json
-```
-
-Example:
-```bash
-# GitHub (Global)
-curl https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/CN/2024.json
-
-# jsDelivr CDN (Global, China-friendly)
-curl https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
-```
-
-### Browser (CDN)
-```html
-<!-- Development version -->
-<script src="https://unpkg.com/holiday-calendar/src/index.js"></script>
-
-<!-- Production version (minified) -->
-<script src="https://unpkg.com/holiday-calendar/src/index.min.js"></script>
-```
-
-## Data Access
-
-Raw file URLs:
-
-### unpkg CDN (Official npm CDN)
-```
-# Latest version - Development
-https://unpkg.com/holiday-calendar/data/{region}/{year}.json
-
-# Latest version - Production (minified)
-https://unpkg.com/holiday-calendar/data/{region}/{year}.min.json
-
-# Specific version - Development
-https://unpkg.com/holiday-calendar@1.0.0/data/{region}/{year}.json
-
-# Specific version - Production (minified)
-https://unpkg.com/holiday-calendar@1.0.0/data/{region}/{year}.min.json
-```
-
----
-
-# holiday-calendar 假期日历
-
-> [English Documentation](#holiday-calendar)
-
-标准化的节假日数据集（JSON格式），提供各个地区的法定节假日和调休安排信息。
-
-## 安装
-
-```bash
-npm install holiday-calendar
 ```
 
 ## 使用方法
@@ -200,35 +93,79 @@ calendar.getHolidays('CN', 2024, {
 });
 ```
 
-## 链接
+## 数据访问
+
+原始 JSON 文件可通过以下方式访问：
+
+1. unpkg：
+```
+https://unpkg.com/holiday-calendar/data/CN/2024.json
+```
+
+2. jsDelivr CDN：
+```
+https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
+```
+
+### 浏览器 (CDN)
+```html
+<!-- 开发版本 -->
+<script src="https://unpkg.com/holiday-calendar/src/index.js"></script>
+
+<!-- 生产版本（压缩后） -->
+<script src="https://unpkg.com/holiday-calendar/src/index.min.js"></script>
+```
+
+## 链接与文档
 
 - GitHub（国际）: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
 - Gitee（国内）: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
-
-📝 文档：
 - [贡献指南](CONTRIBUTING.md)
 - [更新日志](CHANGELOG.md)
-
-📄 许可证：
 - [MIT 许可证](LICENSE)
 
-🌟 特性：
-- 支持多区域的假期日历
-- 工作日配置
+---
 
-## 概述
+# holiday-calendar (English)
 
-本仓库作为以下数据的集中存储：
-- 📅 法定节假日
-- 🏢 调休工作日
+> [中文文档](#holiday-calendar-假期日历)
 
-## 数据格式
+[![npm version](https://img.shields.io/npm/v/holiday-calendar.svg)](https://www.npmjs.com/package/holiday-calendar)
+[![GitHub license](https://img.shields.io/github/license/cg-zhou/holiday-calendar.svg)](https://github.com/cg-zhou/holiday-calendar/blob/main/LICENSE)
 
-所有数据以 JSON 格式存储，便于集成：
+A standardized holiday dataset (in JSON format) providing public holidays and working day adjustments for different regions.
 
-### 假期类型
-- `public_holiday`: 法定节假日
-- `transfer_workday`: 调休工作日（因节假日调整而需要补班的日期）
+## Overview
+
+This repository serves as a centralized data source for:
+- 📅 Public holidays
+- 🏢 Working days
+
+## Data Sources
+
+The data is sourced from official holiday announcements of each region:
+
+- China (CN):
+  - Holiday arrangements notice from [General Office of the State Council](http://www.gov.cn)
+  - Update frequency: Annually, typically released at the end of the previous year
+
+- Japan (JP):
+  - [Cabinet Office](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html) "National Holidays"
+  - Update frequency: Annually, typically released one year in advance
+
+## Installation
+
+```bash
+npm install holiday-calendar
+```
+
+## Data Format
+
+All data is stored in JSON format for easy integration:
+
+### Holiday Types
+- `public_holiday`: Official public holidays
+- `transfer_workday`: Transferred working day, usually a weekend that becomes a workday
 
 ``` json
 {
@@ -253,63 +190,64 @@ calendar.getHolidays('CN', 2024, {
 }
 ```
 
-## 数据访问
+## Usage
 
-原始文件链接：
+```javascript
+// Import the package
+const HolidayCalendar = require('holiday-calendar');
 
-GitHub（国际）:
-- CN 2024 假期数据: [`https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/CN/2024.json`](https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/CN/2024.json)
-- JP 2024 假期数据: [`https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/JP/2024.json`](https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/JP/2024.json)
+// Create an instance
+const calendar = new HolidayCalendar();
 
-jsDelivr CDN（国内友好）:
-- CN 2024 假期数据: [`https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json`](https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json)
-- JP 2024 假期数据: [`https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/JP/2024.json`](https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/JP/2024.json)
+// Check if a date is a holiday
+calendar.isHoliday('CN', '2024-01-01').then(holiday => {
+  if (holiday) {
+    console.log(`${holiday.date} is ${holiday.name_en}`);
+  }
+});
 
-URL 格式：
+// Get all holidays for a specific year
+calendar.getHolidays('CN', 2024).then(holidays => {
+  console.log('2024 Holidays:', holidays);
+});
 
-GitHub:
-```
-https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/{region}/{year}.json
-```
-
-jsDelivr CDN:
-```
-https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/{region}/{year}.json
-```
-
-示例：
-```bash
-# GitHub（国际）
-curl https://raw.githubusercontent.com/cg-zhou/holiday-calendar/main/data/CN/2024.json
-
-# jsDelivr CDN（国内友好）
-curl https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
+// Get holidays with filters
+calendar.getHolidays('CN', 2024, {
+  type: 'public_holiday',           // Filter by type: 'public_holiday' or 'transfer_workday'
+  startDate: '2024-01-01',         // Filter by start date
+  endDate: '2024-12-31'           // Filter by end date
+}).then(holidays => {
+  console.log('Filtered holidays:', holidays);
+});
 ```
 
-### 浏览器 (CDN)
+## Data Access
+
+Raw JSON files can be accessed via:
+
+1. unpkg:
+```
+https://unpkg.com/holiday-calendar/data/CN/2024.json
+```
+
+2. jsDelivr CDN:
+```
+https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
+```
+
+### Browser (CDN)
 ```html
-<!-- 开发版本 -->
+<!-- Development version -->
 <script src="https://unpkg.com/holiday-calendar/src/index.js"></script>
 
-<!-- 生产版本（压缩后） -->
+<!-- Production version (minified) -->
 <script src="https://unpkg.com/holiday-calendar/src/index.min.js"></script>
 ```
 
-## 数据访问
+## Links & Documentation
 
-原始文件链接：
-
-### unpkg CDN (npm 官方 CDN)
-```
-# 最新版本 - 开发环境
-https://unpkg.com/holiday-calendar/data/{region}/{year}.json
-
-# 最新版本 - 生产环境（压缩后）
-https://unpkg.com/holiday-calendar/data/{region}/{year}.min.json
-
-# 指定版本 - 开发环境
-https://unpkg.com/holiday-calendar@1.0.0/data/{region}/{year}.json
-
-# 指定版本 - 生产环境（压缩后）
-https://unpkg.com/holiday-calendar@1.0.0/data/{region}/{year}.min.json
-```
+- GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
+- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Change Log](CHANGELOG.md)
+- [MIT License](LICENSE)

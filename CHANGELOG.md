@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2025-01-18
+
+### Changed
+- Improved documentation with official data sources and links
+- Optimized README.md structure and content
+
 ## [1.0.3] - 2025-01-17
 
 ### Changed

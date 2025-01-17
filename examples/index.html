@@ -64,7 +64,7 @@
   </style>
 </head>
 <body>
-  <!-- Language switcher control -->
+  <!-- Language and region controls -->
   <div class="controls">
     <label>Holiday Name Language:</label>
     <select id="langSelect">
@@ -72,6 +72,13 @@
       <option value="name_en">English</option>
       <option value="name_cn">中文</option>
     </select>
+    <label style="margin-left: 20px;">Regions:</label>
+    <label style="margin-left: 10px;">
+      <input type="checkbox" id="regionCN" checked> China
+    </label>
+    <label style="margin-left: 10px;">
+      <input type="checkbox" id="regionJP" checked> Japan
+    </label>
   </div>
   
   <div id='calendar'></div>
@@ -120,10 +127,17 @@
 
       // Update calendar events
       function updateEvents(langKey) {
-        const events = [
-          ...convertToEvents(holidayData.CN, 'CN', langKey),
-          ...convertToEvents(holidayData.JP, 'JP', langKey)
-        ];
+        const events = [];
+        const showCN = document.getElementById('regionCN').checked;
+        const showJP = document.getElementById('regionJP').checked;
+        
+        if (showCN) {
+          events.push(...convertToEvents(holidayData.CN, 'CN', langKey));
+        }
+        if (showJP) {
+          events.push(...convertToEvents(holidayData.JP, 'JP', langKey));
+        }
+        
         fc.removeAllEvents();
         fc.addEventSource(events);
       }
@@ -152,14 +166,37 @@
         updateEvents(e.target.value);
       });
 
+      // Listen for region changes
+      document.getElementById('regionCN').addEventListener('change', function() {
+        const langSelect = document.getElementById('langSelect');
+        updateEvents(langSelect.value);
+      });
+      
+      document.getElementById('regionJP').addEventListener('change', function() {
+        const langSelect = document.getElementById('langSelect');
+        updateEvents(langSelect.value);
+      });
+
       // Get transfer workday dates
       function getWorkdayDates() {
         const workdays = new Set();
-        [...holidayData.CN, ...holidayData.JP].forEach(holiday => {
-          if (holiday.type === 'transfer_workday') {
-            workdays.add(holiday.date);
-          }
-        });
+        const showCN = document.getElementById('regionCN').checked;
+        const showJP = document.getElementById('regionJP').checked;
+        
+        if (showCN) {
+          holidayData.CN.forEach(holiday => {
+            if (holiday.type === 'transfer_workday') {
+              workdays.add(holiday.date);
+            }
+          });
+        }
+        if (showJP) {
+          holidayData.JP.forEach(holiday => {
+            if (holiday.type === 'transfer_workday') {
+              workdays.add(holiday.date);
+            }
+          });
+        }
         return workdays;
       }
 
