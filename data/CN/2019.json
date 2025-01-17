@@ -1,7 +1,7 @@
 {
   "year": 2019,
   "region": "CN",
-  "holidays": [
+  "dates": [
     {
       "date": "2018-12-29",
       "name": "元旦补班",

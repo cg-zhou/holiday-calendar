@@ -1,7 +1,7 @@
 {
   "name": "holiday-calendar",
   "version": "1.0.4",
-  "description": "A standardized holiday dataset providing public holidays and working day adjustments for different regions",
+  "description": "A standardized date dataset providing public holidays and working day adjustments for different regions",
   "main": "src/index.js",
   "browser": "src/index.js",
   "files": [

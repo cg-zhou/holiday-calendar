@@ -34,41 +34,44 @@ class HolidayCalendar {
   }
 
   /**
-   * Get holidays for specific region and year
-   * @param {string} region - Region code
-   * @param {number} year - Year
-   * @param {Object} options - Filter options
-   * @returns {Promise<Array>} Filtered holidays
+   * Get dates for specific region and year
+   * @param {string} region - Region code (e.g. 'CN', 'JP')
+   * @param {number} year - Year (e.g. 2024)
+   * @param {Object} [options] - Filter options
+   * @param {string} [options.type] - Filter by type
+   * @param {string} [options.startDate] - Filter by start date (YYYY-MM-DD)
+   * @param {string} [options.endDate] - Filter by end date (YYYY-MM-DD)
+   * @returns {Promise<Array>} Filtered dates
    */
   async getHolidays(region, year, options = {}) {
     const data = await this.load(region, year);
-    let holidays = data.holidays;
+    let dates = data.dates;
 
     if (options.type) {
-      holidays = holidays.filter(h => h.type === options.type);
+      dates = dates.filter(h => h.type === options.type);
     }
 
     if (options.startDate) {
-      holidays = holidays.filter(h => h.date >= options.startDate);
+      dates = dates.filter(h => h.date >= options.startDate);
     }
 
     if (options.endDate) {
-      holidays = holidays.filter(h => h.date <= options.endDate);
+      dates = dates.filter(h => h.date <= options.endDate);
     }
 
-    return holidays;
+    return dates;
   }
 
   /**
-   * Check if a specific date is a holiday
-   * @param {string} region - Region code
+   * Get date info for specific date
+   * @param {string} region - Region code (e.g. 'CN', 'JP')
    * @param {string} date - Date string (YYYY-MM-DD)
-   * @returns {Promise<Object|null>} Holiday information if it's a holiday, null otherwise
+   * @returns {Promise<Object|null>} Date info or null if not found
    */
-  async isHoliday(region, date) {
-    const year = parseInt(date.split('-')[0]);
-    const holidays = await this.getHolidays(region, year);
-    return holidays.find(h => h.date === date) || null;
+  async getDateInfo(region, date) {
+    const year = parseInt(date.slice(0, 4));
+    const dates = await this.getHolidays(region, year);
+    return dates.find(h => h.date === date) || null;
   }
 }
 

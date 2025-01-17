@@ -35,7 +35,7 @@ npm install holiday-calendar
 
 所有数据以 JSON 格式存储，便于集成：
 
-### 假期类型
+### 日期类型
 - `public_holiday`: 法定节假日
 - `transfer_workday`: 调休工作日（因节假日调整而需要补班的日期）
 
@@ -43,7 +43,7 @@ npm install holiday-calendar
 {
   "year": 2025,
   "region": "CN",
-  "holidays": [
+  "dates": [
     {
       "date": "2025-01-01",
       "name": "New Year's Day",
@@ -71,25 +71,25 @@ const HolidayCalendar = require('holiday-calendar');
 // 创建实例
 const calendar = new HolidayCalendar();
 
-// 检查某天是否为假期
-calendar.isHoliday('CN', '2024-01-01').then(holiday => {
-  if (holiday) {
-    console.log(`${holiday.date} 是 ${holiday.name_cn}`);
+// 获取某天的日期信息
+calendar.getDateInfo('CN', '2024-01-01').then(dateInfo => {
+  if (dateInfo) {
+    console.log(`${dateInfo.date} 是 ${dateInfo.name_cn}`);
   }
 });
 
-// 获取指定年份的所有假期
-calendar.getHolidays('CN', 2024).then(holidays => {
-  console.log('2024年假期:', holidays);
+// 获取指定年份的所有日期
+calendar.getHolidays('CN', 2024).then(dates => {
+  console.log('2024年日期:', dates);
 });
 
-// 使用过滤条件获取假期
+// 使用过滤条件获取日期
 calendar.getHolidays('CN', 2024, {
   type: 'public_holiday',           // 按类型过滤：'public_holiday'(法定节假日) 或 'transfer_workday'(调休工作日)
   startDate: '2024-01-01',         // 按开始日期过滤
   endDate: '2024-12-31'           // 按结束日期过滤
-}).then(holidays => {
-  console.log('过滤后的假期:', holidays);
+}).then(dates => {
+  console.log('过滤后的日期:', dates);
 });
 ```
 
@@ -163,7 +163,7 @@ npm install holiday-calendar
 
 All data is stored in JSON format for easy integration:
 
-### Holiday Types
+### Date Types
 - `public_holiday`: Official public holidays
 - `transfer_workday`: Transferred working day, usually a weekend that becomes a workday
 
@@ -171,7 +171,7 @@ All data is stored in JSON format for easy integration:
 {
   "year": 2025,
   "region": "CN",
-  "holidays": [
+  "dates": [
     {
       "date": "2025-01-01",
       "name": "New Year's Day",
@@ -199,25 +199,25 @@ const HolidayCalendar = require('holiday-calendar');
 // Create an instance
 const calendar = new HolidayCalendar();
 
-// Check if a date is a holiday
-calendar.isHoliday('CN', '2024-01-01').then(holiday => {
-  if (holiday) {
-    console.log(`${holiday.date} is ${holiday.name_en}`);
+// Get date info for a specific date
+calendar.getDateInfo('CN', '2024-01-01').then(dateInfo => {
+  if (dateInfo) {
+    console.log(`${dateInfo.date} is ${dateInfo.name_en}`);
   }
 });
 
-// Get all holidays for a specific year
-calendar.getHolidays('CN', 2024).then(holidays => {
-  console.log('2024 Holidays:', holidays);
+// Get all dates for a specific year
+calendar.getHolidays('CN', 2024).then(dates => {
+  console.log('2024 Dates:', dates);
 });
 
-// Get holidays with filters
+// Get dates with filters
 calendar.getHolidays('CN', 2024, {
   type: 'public_holiday',           // Filter by type: 'public_holiday' or 'transfer_workday'
   startDate: '2024-01-01',         // Filter by start date
   endDate: '2024-12-31'           // Filter by end date
-}).then(holidays => {
-  console.log('Filtered holidays:', holidays);
+}).then(dates => {
+  console.log('Filtered dates:', dates);
 });
 ```
 

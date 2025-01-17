@@ -1,7 +1,7 @@
 {
   "year": 2023,
   "region": "CN",
-  "holidays": [
+  "dates": [
     {
       "date": "2022-12-31",
       "name": "元旦",

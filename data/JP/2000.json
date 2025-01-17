@@ -1,7 +1,7 @@
 {
   "year": 2000,
   "region": "JP",
-  "holidays": [
+  "dates": [
     {
       "date": "2000-01-01",
       "name": "元日",

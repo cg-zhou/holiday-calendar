@@ -6,10 +6,10 @@ global.fetch = async (url) => {
   const mockData = {
     year: 2024,
     region: 'CN',
-    holidays: [
+    dates: [
       {
         date: '2024-01-01',
-        name: 'New Year\'s Day',
+        name: '元旦',
         name_cn: '元旦',
         name_en: 'New Year\'s Day',
         type: 'public_holiday'
@@ -32,7 +32,7 @@ async function runTests() {
     const cnData = await calendar.load('CN', 2024);
     assert(cnData.year === 2024, 'Year should be 2024');
     assert(cnData.region === 'CN', 'Region should be CN');
-    assert(Array.isArray(cnData.holidays), 'Holidays should be an array');
+    assert(Array.isArray(cnData.dates), 'Dates should be an array');
 
     // Test getting holidays
     console.log('Testing holiday filtering...');

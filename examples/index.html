@@ -98,28 +98,28 @@
       const currentYear = new Date().getFullYear();
       
       // Get holiday data for different regions
-      const [cnHolidays, jpHolidays] = await Promise.all([
+      const [cnDates, jpDates] = await Promise.all([
         calendar.getHolidays('CN', currentYear),
         calendar.getHolidays('JP', currentYear)
       ]);
 
       // Save original data
-      holidayData.CN = cnHolidays;
-      holidayData.JP = jpHolidays;
+      holidayData.CN = cnDates;
+      holidayData.JP = jpDates;
 
       // Convert holiday data to calendar events
-      function convertToEvents(holidays, region, langKey = 'name') {
-        return holidays.map(holiday => ({
-          title: `[${region}] ${holiday[langKey]}`,
-          start: holiday.date,
-          className: holiday.type === 'transfer_workday' ? 'transfer-workday' : `holiday-${region}`,
+      function convertToEvents(dates, region, langKey = 'name') {
+        return dates.map(date => ({
+          title: `[${region}] ${date[langKey]}`,
+          start: date.date,
+          className: date.type === 'transfer_workday' ? 'transfer-workday' : `holiday-${region}`,
           extendedProps: {
             region: region,
-            type: holiday.type,
+            type: date.type,
             names: {
-              default: holiday.name,
-              en: holiday.name_en,
-              cn: holiday.name_cn
+              default: date.name,
+              en: date.name_en,
+              cn: date.name_cn
             }
           }
         }));
@@ -145,13 +145,13 @@
       // Load holiday data for specific year
       async function loadYearData(year) {
         try {
-          const [cnHolidays, jpHolidays] = await Promise.all([
+          const [cnDates, jpDates] = await Promise.all([
             calendar.getHolidays('CN', year),
             calendar.getHolidays('JP', year)
           ]);
           
-          holidayData.CN = cnHolidays;
-          holidayData.JP = jpHolidays;
+          holidayData.CN = cnDates;
+          holidayData.JP = jpDates;
           
           // Update display with current language setting
           const langSelect = document.getElementById('langSelect');
@@ -210,8 +210,8 @@
           right: 'dayGridMonth,dayGridWeek'
         },
         events: [
-          ...convertToEvents(cnHolidays, 'CN', 'name'),
-          ...convertToEvents(jpHolidays, 'JP', 'name')
+          ...convertToEvents(cnDates, 'CN', 'name'),
+          ...convertToEvents(jpDates, 'JP', 'name')
         ],
         datesSet: function(info) {
           // Check and load data when view changes (including month/year changes)

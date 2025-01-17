@@ -1,7 +1,7 @@
 {
   "year": 2018,
   "region": "CN",
-  "holidays": [
+  "dates": [
     {
       "date": "2018-01-01",
       "name": "元旦",

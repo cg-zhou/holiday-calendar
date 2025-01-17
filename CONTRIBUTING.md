@@ -12,7 +12,7 @@ Thank you for your interest in contributing to holiday-calendar! This document p
 {
   "year": 2024,
   "region": "CN",
-  "holidays": [
+  "dates": [
     {
       "date": "2024-01-01",
       "name": "元旦",
@@ -39,7 +39,7 @@ Thank you for your interest in contributing to holiday-calendar! This document p
 
 ## Code Style
 - Use 2 spaces for indentation in JSON files
-- Sort holidays by date
+- Sort dates by date
 - Follow existing naming conventions
 
 ## Data Validation
