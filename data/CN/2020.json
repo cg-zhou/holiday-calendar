@@ -66,11 +66,18 @@
       "type": "public_holiday"
     },
     {
+      "date": "2020-01-31",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
       "date": "2020-02-01",
-      "name": "春节补班",
-      "name_cn": "春节补班",
-      "name_en": "Spring Festival Workday",
-      "type": "transfer_workday"
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
     },
     {
       "date": "2020-04-04",
