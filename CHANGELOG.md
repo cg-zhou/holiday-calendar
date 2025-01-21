@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.3] - 2024-03-21
+
+### Fixed
+- Updated the holiday dates of CN for 2020
+
 ## [1.1.2] - 2025-01-18
 
 ### Changed

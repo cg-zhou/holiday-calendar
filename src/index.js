@@ -1,6 +1,6 @@
 class HolidayCalendar {
   constructor(options = {}) {
-    this.version = '1.1.2';
+    this.version = '1.1.3';
     this.cache = new Map();
     this.dataLoader = options.dataLoader || this.defaultDataLoader;
   }
