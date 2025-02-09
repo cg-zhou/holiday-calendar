@@ -1,0 +1,31 @@
+# Source control
+.git/
+.gitignore
+
+# IDE
+.idea/
+.vscode/
+*.sublime-*
+
+# Tests
+test/
+*.test.js
+*.spec.js
+
+# Config files
+.eslintrc*
+.prettierrc*
+
+# Documentation
+docs/
+examples/
+CONTRIBUTING.md
+
+# Build tools
+.travis.yml
+.github/
+.gitlab-ci.yml
+
+# Logs
+logs/
+*.log 

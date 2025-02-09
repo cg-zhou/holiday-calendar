@@ -1,0 +1,244 @@
+{
+  "year": 2016,
+  "region": "CN",
+  "dates": [
+    {
+      "date": "2016-01-01",
+      "name": "元旦",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-01-02",
+      "name": "元旦",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-01-03",
+      "name": "元旦",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-06",
+      "name": "春节补班",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2016-02-07",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-08",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-09",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-10",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-11",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-12",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-13",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-02-14",
+      "name": "春节补班",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2016-04-02",
+      "name": "清明节补班",
+      "name_cn": "清明节补班",
+      "name_en": "Tomb-sweeping Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2016-04-04",
+      "name": "清明节",
+      "name_cn": "清明节",
+      "name_en": "Tomb-sweeping Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-04-30",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-05-01",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-05-02",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-06-09",
+      "name": "端午节",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-06-10",
+      "name": "端午节",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-06-11",
+      "name": "端午节",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-06-12",
+      "name": "端午节补班",
+      "name_cn": "端午节补班",
+      "name_en": "Dragon Boat Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2016-09-15",
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-09-16",
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-09-17",
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-09-18",
+      "name": "中秋节补班",
+      "name_cn": "中秋节补班",
+      "name_en": "Mid-Autumn Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2016-10-01",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-02",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-03",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-04",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-05",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-06",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-07",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2016-10-08",
+      "name": "国庆节补班",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2016-10-09",
+      "name": "国庆节补班",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    }
+  ]
+}
