@@ -9,7 +9,7 @@
 
 ## 概述
 
-本仓库作为以下数据的集中存储：
+本仓库集中存储以下数据：
 - 📅 法定节假日
 - 🏢 调休工作日
 
@@ -72,7 +72,7 @@ const HolidayCalendar = require('holiday-calendar');
 const calendar = new HolidayCalendar();
 
 // 获取某天的日期信息
-calendar.getDateInfo('CN', '2024-01-01').then(dateInfo => {
+calendar.getDateInfo('CN', '2025-01-01').then(dateInfo => {
   if (dateInfo) {
     console.log(`${dateInfo.date} 是 ${dateInfo.name_cn}`);
   }
@@ -99,12 +99,12 @@ calendar.getDates('CN', 2025, {
 
 1. unpkg：
 ```
-https://unpkg.com/holiday-calendar/data/CN/2024.json
+https://unpkg.com/holiday-calendar/data/CN/2025.json
 ```
 
 2. jsDelivr CDN：
 ```
-https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
+https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 ```
 
 ### 浏览器 (CDN)
@@ -119,7 +119,6 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
 ## 链接与文档
 
 - GitHub（国际）: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
-- Gitee（国内）: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
 - [贡献指南](CONTRIBUTING.md)
 - [更新日志](CHANGELOG.md)
 - [MIT 许可证](LICENSE)
@@ -200,7 +199,7 @@ const HolidayCalendar = require('holiday-calendar');
 const calendar = new HolidayCalendar();
 
 // Get date info for a specific date
-calendar.getDateInfo('CN', '2024-01-01').then(dateInfo => {
+calendar.getDateInfo('CN', '2025-01-01').then(dateInfo => {
   if (dateInfo) {
     console.log(`${dateInfo.date} is ${dateInfo.name_en}`);
   }
@@ -227,12 +226,12 @@ Raw JSON files can be accessed via:
 
 1. unpkg:
 ```
-https://unpkg.com/holiday-calendar/data/CN/2024.json
+https://unpkg.com/holiday-calendar/data/CN/2025.json
 ```
 
 2. jsDelivr CDN:
 ```
-https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
+https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 ```
 
 ### Browser (CDN)
@@ -247,7 +246,6 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2024.json
 ## Links & Documentation
 
 - GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
-- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Change Log](CHANGELOG.md)
 - [MIT License](LICENSE)
