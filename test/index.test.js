@@ -5,26 +5,28 @@ const path = require('path');
 const HolidayCalendar = require('../src/index');
 
 /**
- * Test data loader that loads data from local files
- * @param {string} region - Region code
- * @param {number} year - Year
- * @returns {Promise<Object>} Holiday data
+ * Local file data loader
+ * @param {string} resourcePath - Resource path
+ * @returns {Promise<Object>} JSON data
  */
-async function testDataLoader(region, year) {
-  const filePath = path.join(__dirname, '..', 'data', region, `${year}.json`);
+async function localDataLoader(resourcePath) {
+  const filePath = path.join(__dirname, '..', 'data', resourcePath);
   const data = fs.readFileSync(filePath, 'utf8');
   return JSON.parse(data);
 }
 
-async function runTests() {
+async function runTests(options = {}) {
+  const testType = options.type || 'local';
+  console.log(`Running ${testType} tests...`);
+
   const calendar = new HolidayCalendar({
-    dataLoader: testDataLoader
+    dataLoader: testType === 'local' ? localDataLoader : undefined
   });
 
   try {
     // Test loading data
     console.log('Testing data loading...');
-    const cnData = await calendar.load('CN', 2024);
+    const cnData = await calendar.load('CN', 2024);  // Changed: Using load with region and year
     assert(cnData.year === 2024, 'Year should be 2024');
     assert(cnData.region === 'CN', 'Region should be CN');
     assert(Array.isArray(cnData.dates), 'Dates should be an array');
@@ -109,11 +111,31 @@ async function runTests() {
       assert(data2025.dates.find(d => d.date === date && d.type === type), `${date} should be ${type}`);
     });
 
-    console.log('All tests passed!');
+    // Test getting index
+    console.log('Testing index information...');
+    const index = await calendar.getIndex();
+    assert(index.regions, 'Index should have regions property');
+    assert(Array.isArray(index.regions), 'Index regions should be an array');
+    
+    // Test CN region info
+    const cnRegion = index.regions.find(r => r.name === 'CN');
+    assert(cnRegion, 'Index should contain CN region');
+    assert(cnRegion.startYear === 2002, 'CN should start from 2002');
+    assert(cnRegion.endYear === 2025, 'CN should end at 2025');
+
+    // Test JP region info
+    const jpRegion = index.regions.find(r => r.name === 'JP');
+    assert(jpRegion, 'Index should contain JP region');
+    assert(jpRegion.startYear === 2000, 'JP should start from 2000');
+    assert(jpRegion.endYear === 2026, 'JP should end at 2026');
+
+    console.log(`All ${testType} tests passed!`);
   } catch (error) {
-    console.error('Tests failed:', error);
+    console.error(`${testType} tests failed:`, error);
     process.exit(1);
   }
 }
 
-runTests(); 
+// 根据命令行参数决定运行哪种测试
+const testType = process.argv[2] || 'local';
+runTests({ type: testType });

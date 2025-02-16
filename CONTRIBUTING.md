@@ -10,11 +10,11 @@ Thank you for your interest in contributing to holiday-calendar! This document p
 2. Follow the data format:
 ```json
 {
-  "year": 2024,
+  "year": 2025,
   "region": "CN",
   "dates": [
     {
-      "date": "2024-01-01",
+      "date": "2025-01-01",
       "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",

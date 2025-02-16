@@ -1,19 +1,18 @@
 class HolidayCalendar {
   constructor(options = {}) {
-    this.version = '1.1.3';
+    this.version = '1.1.4';
     this.cache = new Map();
     this.dataLoader = options.dataLoader || this.defaultDataLoader;
+    this.baseUrl = 'https://unpkg.com/holiday-calendar/data';
   }
 
   /**
    * Default data loader that fetches data from CDN
-   * @param {string} region - Region code (e.g., 'CN', 'JP')
-   * @param {number} year - Year to load
-   * @returns {Promise<Object>} Holiday data
+   * @param {string} path - Resource path (e.g., 'index.json', 'CN/2024.json')
+   * @returns {Promise<Object>} JSON data
    */
-  async defaultDataLoader(region, year) {
-    const baseUrl = 'https://unpkg.com/holiday-calendar/data';
-    const url = `${baseUrl}/${region}/${year}.json`;
+  async defaultDataLoader(path) {
+    const url = `${this.baseUrl}/${path}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -21,7 +20,7 @@ class HolidayCalendar {
       }
       return response.json();
     } catch (error) {
-      throw new Error(`Failed to load date data for ${region} ${year}: ${error.message}`);
+      throw new Error(`Failed to load data for ${path}: ${error.message}`);
     }
   }
 
@@ -38,7 +37,7 @@ class HolidayCalendar {
       return this.cache.get(cacheKey);
     }
 
-    const data = await this.dataLoader(region, year);
+    const data = await this.dataLoader(`${region}/${year}.json`);
     this.cache.set(cacheKey, data);
     return data;
   }
@@ -83,6 +82,22 @@ class HolidayCalendar {
     const dates = await this.getDates(region, year);
     return dates.find(h => h.date === date) || null;
   }
+
+  /**
+   * Get index information
+   * @returns {Promise<Object>} Index information containing regions and their year ranges
+   */
+  async getIndex() {
+    const cacheKey = 'index';
+    
+    if (this.cache.has(cacheKey)) {
+      return this.cache.get(cacheKey);
+    }
+
+    const data = await this.dataLoader('index.json');
+    this.cache.set(cacheKey, data);
+    return data;
+  }
 }
 
 // Export as UMD (Universal Module Definition)
@@ -99,4 +114,4 @@ class HolidayCalendar {
   }
 }(typeof self !== 'undefined' ? self : this, function() {
   return HolidayCalendar;
-})); 
+}));

@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.4] - 2024-03-22
+
+### Changed
+- Generated index file before minifying JSON files
+- Support to test CDN json data
+
 ## [1.1.3] - 2024-03-21
 
 ### Fixed

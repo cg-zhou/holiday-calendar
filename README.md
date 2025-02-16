@@ -35,6 +35,25 @@ npm install holiday-calendar
 
 所有数据以 JSON 格式存储，便于集成：
 
+### 索引文件
+位于 `/data/index.json`，包含所有地区的年份范围信息：
+``` json
+{
+  "regions": [
+    {
+      "name": "CN",
+      "startYear": 2002,
+      "endYear": 2025
+    },
+    {
+      "name": "JP",
+      "startYear": 2000,
+      "endYear": 2026
+    }
+  ]
+}
+```
+
 ### 日期类型
 - `public_holiday`: 法定节假日
 - `transfer_workday`: 调休工作日（因节假日调整而需要补班的日期）
@@ -70,6 +89,11 @@ const HolidayCalendar = require('holiday-calendar');
 
 // 创建实例
 const calendar = new HolidayCalendar();
+
+// 获取索引信息
+calendar.getIndex().then(index => {
+  console.log('支持的地区:', index.regions);
+});
 
 // 获取某天的日期信息
 calendar.getDateInfo('CN', '2025-01-01').then(dateInfo => {
@@ -118,7 +142,8 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 
 ## 链接与文档
 
-- GitHub（国际）: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
+- GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
+- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
 - [贡献指南](CONTRIBUTING.md)
 - [更新日志](CHANGELOG.md)
 - [MIT 许可证](LICENSE)
@@ -162,6 +187,25 @@ npm install holiday-calendar
 
 All data is stored in JSON format for easy integration:
 
+### Index File
+Located at `/data/index.json`, contains year ranges for all regions:
+``` json
+{
+  "regions": [
+    {
+      "name": "CN",
+      "startYear": 2002,
+      "endYear": 2025
+    },
+    {
+      "name": "JP",
+      "startYear": 2000,
+      "endYear": 2026
+    }
+  ]
+}
+```
+
 ### Date Types
 - `public_holiday`: Official public holidays
 - `transfer_workday`: Transferred working day, usually a weekend that becomes a workday
@@ -197,6 +241,11 @@ const HolidayCalendar = require('holiday-calendar');
 
 // Create an instance
 const calendar = new HolidayCalendar();
+
+// Get index information
+calendar.getIndex().then(index => {
+  console.log('Supported regions:', index.regions);
+});
 
 // Get date info for a specific date
 calendar.getDateInfo('CN', '2025-01-01').then(dateInfo => {
@@ -246,6 +295,7 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 ## Links & Documentation
 
 - GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
+- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Change Log](CHANGELOG.md)
 - [MIT License](LICENSE)

@@ -77,7 +77,7 @@
       <input type="checkbox" id="regionCN" checked> China
     </label>
     <label style="margin-left: 10px;">
-      <input type="checkbox" id="regionJP" checked> Japan
+      <input type="checkbox" id="regionJP"> Japan
     </label>
   </div>
   
@@ -210,8 +210,7 @@
           right: 'dayGridMonth,dayGridWeek'
         },
         events: [
-          ...convertToEvents(cnDates, 'CN', 'name'),
-          ...convertToEvents(jpDates, 'JP', 'name')
+          ...convertToEvents(cnDates, 'CN', 'name')
         ],
         datesSet: function(info) {
           // Check and load data when view changes (including month/year changes)

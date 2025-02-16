@@ -38,9 +38,44 @@ function minifyJson(filePath) {
   console.log(`Minified: ${filePath} -> ${minPath}`);
 }
 
+// Generate index JSON file
+function generateIndexFile(dataDir) {
+  const index = {
+    regions: []
+  };
+
+  const regions = fs.readdirSync(dataDir).filter(item => {
+    const fullPath = path.join(dataDir, item);
+    return fs.statSync(fullPath).isDirectory();
+  });
+
+  regions.forEach(region => {
+    const regionDir = path.join(dataDir, region);
+    const files = fs.readdirSync(regionDir).filter(file => file.endsWith('.json') && !file.endsWith('.min.json'));
+
+    const years = files.map(file => parseInt(path.basename(file, '.json')));
+    const startYear = Math.min(...years);
+    const endYear = Math.max(...years);
+
+    index.regions.push({
+      name: region,
+      startYear: startYear,
+      endYear: endYear
+    });
+  });
+
+  const indexPath = path.join(dataDir, 'index.json');
+  fs.writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf8');
+}
+
 // Main function
 function main() {
   const dataDir = path.join(__dirname, '..', 'data');
+  
+  // Generate index JSON file
+  generateIndexFile(dataDir);
+
+  // Minify all JSON files
   const jsonFiles = getAllJsonFiles(dataDir);
   
   jsonFiles.forEach(file => {
@@ -52,4 +87,4 @@ function main() {
   });
 }
 
-main(); 
+main();

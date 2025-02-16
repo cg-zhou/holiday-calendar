@@ -1,0 +1,14 @@
+{
+  "regions": [
+    {
+      "name": "CN",
+      "startYear": 2002,
+      "endYear": 2025
+    },
+    {
+      "name": "JP",
+      "startYear": 2000,
+      "endYear": 2026
+    }
+  ]
+}
