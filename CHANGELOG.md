@@ -2,13 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1.4] - 2024-03-22
+## [1.1.5] - 2025-02-22
+
+### Added
+- Added `isWorkday` method to check if a date is a workday
+- Added `isHoliday` method to check if a date is a holiday
+
+### Changed
+- Optimized documentation structure
+- Added new method examples to README
+
+## [1.1.4] - 2025-02-16
 
 ### Changed
 - Generated index file before minifying JSON files
 - Support to test CDN json data
 
-## [1.1.3] - 2024-03-21
+## [1.1.3] - 2025-01-21
 
 ### Fixed
 - Updated the holiday dates of CN for 2020

@@ -1,6 +1,6 @@
 class HolidayCalendar {
   constructor(options = {}) {
-    this.version = '1.1.4';
+    this.version = '1.1.5';
     this.cache = new Map();
     this.dataLoader = options.dataLoader || this.defaultDataLoader;
     this.baseUrl = 'https://unpkg.com/holiday-calendar/data';
@@ -81,6 +81,42 @@ class HolidayCalendar {
     const year = parseInt(date.slice(0, 4));
     const dates = await this.getDates(region, year);
     return dates.find(h => h.date === date) || null;
+  }
+
+  /**
+   * Check if a specific date is a workday
+   * @param {string} region - Region code (e.g. 'CN', 'JP')
+   * @param {string} date - Date string (YYYY-MM-DD)
+   * @returns {Promise<boolean>} True if the date is a workday
+   */
+  async isWorkday(region, date) {
+    const dateInfo = await this.getDateInfo(region, date);
+    
+    // Get day of week (0 = Sunday, 6 = Saturday)
+    const dayOfWeek = new Date(date).getDay();
+    
+    // If it's a transfer workday, it's a workday
+    if (dateInfo?.type === 'transfer_workday') {
+      return true;
+    }
+    
+    // If it's a public holiday, it's not a workday
+    if (dateInfo?.type === 'public_holiday') {
+      return false;
+    }
+    
+    // Regular weekdays (Monday-Friday) are workdays
+    return dayOfWeek > 0 && dayOfWeek < 6;
+  }
+
+  /**
+   * Check if a specific date is a holiday
+   * @param {string} region - Region code (e.g. 'CN', 'JP')
+   * @param {string} date - Date string (YYYY-MM-DD)
+   * @returns {Promise<boolean>} True if the date is a holiday
+   */
+  async isHoliday(region, date) {
+    return !(await this.isWorkday(region, date));
   }
 
   /**

@@ -129,6 +129,25 @@ async function runTests(options = {}) {
     assert(jpRegion.startYear === 2000, 'JP should start from 2000');
     assert(jpRegion.endYear === 2026, 'JP should end at 2026');
 
+    // Test isWorkday and isHoliday functions
+    console.log('Testing isWorkday and isHoliday...');
+    
+    // Test normal workday (Wednesday)
+    assert(await calendar.isWorkday('CN', '2025-01-15') === true, '2025-01-15 should be a workday');
+    assert(await calendar.isHoliday('CN', '2025-01-15') === false, '2025-01-15 should not be a holiday');
+    
+    // Test normal weekend (Sunday)
+    assert(await calendar.isWorkday('CN', '2025-01-19') === false, '2025-01-19 should not be a workday');
+    assert(await calendar.isHoliday('CN', '2025-01-19') === true, '2025-01-19 should be a holiday');
+    
+    // Test public holiday (New Year's Day)
+    assert(await calendar.isWorkday('CN', '2025-01-01') === false, '2025-01-01 should not be a workday');
+    assert(await calendar.isHoliday('CN', '2025-01-01') === true, '2025-01-01 should be a holiday');
+    
+    // Test transfer workday (Spring Festival adjustment)
+    assert(await calendar.isWorkday('CN', '2025-01-26') === true, '2025-01-26 should be a workday');
+    assert(await calendar.isHoliday('CN', '2025-01-26') === false, '2025-01-26 should not be a holiday');
+
     console.log(`All ${testType} tests passed!`);
   } catch (error) {
     console.error(`${testType} tests failed:`, error);
