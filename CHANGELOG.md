@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.1.5] - 2025-02-22
+## [1.1.6] - 2025-02-22
 
 ### Added
 - Added `isWorkday` method to check if a date is a workday

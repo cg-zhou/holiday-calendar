@@ -116,12 +116,12 @@ calendar.getDates('CN', 2025, {
   console.log('Filtered dates:', dates);
 });
 
-// Check if date is a workday: Mon-Fri (excluding public holidays), weekends (only transfer workdays)
+// Check if date is a workday: includes 1) Mon-Fri except public holidays, 2) transfer working weekends
 calendar.isWorkday('CN', '2025-01-01').then(isWorkday => {
   console.log('Is workday:', isWorkday); // false (New Year's Day holiday)
 });
 
-// Check if date is a holiday: weekends (excluding transfer workdays), Mon-Fri (public holidays)
+// Check if date is a holiday: includes 1) public holidays, 2) weekends except transfer workdays
 calendar.isHoliday('CN', '2025-01-26').then(isHoliday => {
   console.log('Is holiday:', isHoliday); // false (Spring Festival workday)
 });

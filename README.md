@@ -116,12 +116,12 @@ calendar.getDates('CN', 2025, {
   console.log('过滤后的日期:', dates);
 });
 
-// 判断是否为工作日：周一至周五（不含法定节假日），周末（调班日）
+// 判断是否为工作日，工作日包括 1）非法定节假日的周一至周五，2）调班的周末
 calendar.isWorkday('CN', '2025-01-01').then(isWorkday => {
   console.log('是否为工作日:', isWorkday); // false (元旦节假日)
 });
 
-// 判断是否为假期：周末（不含调班日），周一至周五（法定节假日）
+// 判断是否为假期，假期包括 1）法定节假日，2）非调班的周末
 calendar.isHoliday('CN', '2025-01-26').then(isHoliday => {
   console.log('是否为假期:', isHoliday); // false (春节调休工作日)
 });
