@@ -151,10 +151,23 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 <script src="https://unpkg.com/holiday-calendar/src/index.min.js"></script>
 ```
 
+> **Important Note**: For users in mainland China, considering the stability of CDN services, it is recommended to deploy the JSON data from the `data` directory on your own server to ensure a more reliable access experience.
+
 ## Links & Documentation
 
 - GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
-- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
+- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/gitee.com/cg-zhou/holiday-calendar)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Change Log](CHANGELOG.md)
 - [MIT License](LICENSE)
+
+---
+
+## Disclaimer
+
+Holiday data in this project is sourced from official announcements, but please note:
+
+1.  **Policy Dependency**: Holiday arrangements depend on national policies and do not follow fixed rules; they may vary each year.
+2.  **Potential Changes**: In special circumstances, official bodies may make temporary adjustments or additions to published holiday schedules, and updates to this repository's data might be delayed.
+
+Therefore, when using this data, please always cross-reference with the latest official announcements to ensure accuracy.

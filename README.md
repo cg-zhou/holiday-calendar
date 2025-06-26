@@ -150,6 +150,8 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 <script src="https://unpkg.com/holiday-calendar/src/index.min.js"></script>
 ```
 
+> **重要提示**：对于中国大陆用户，考虑到 CDN 服务的稳定性，建议将 `data` 目录下的 JSON 数据部署到您自己的服务器上，以确保更可靠的访问体验。
+
 ## 链接与文档
 
 - GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
@@ -157,3 +159,14 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 - [贡献指南](CONTRIBUTING.md)
 - [更新日志](CHANGELOG.md)
 - [MIT 许可证](LICENSE)
+
+---
+
+## 免责声明
+
+本项目的节假日数据来源于官方发布，但请注意：
+
+1.  **政策依赖性**：节假日安排依赖于国家政策，没有固定规则，每年可能有所不同。
+2.  **潜在变更**：在特殊情况下，官方可能会对已发布的节假日安排进行临时调整或补充，本仓库的数据更新可能存在滞后。
+
+因此，在使用本数据时，请务必结合官方最新发布的信息进行核对，以确保准确性。
