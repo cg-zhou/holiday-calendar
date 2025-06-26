@@ -156,7 +156,7 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
 ## Links & Documentation
 
 - GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
-- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/gitee.com/cg-zhou/holiday-calendar)
+- Gitee: [cg-zhou/holiday-calendar](https://gitee.com/cg-zhou/holiday-calendar)
 - [Contributing Guidelines](CONTRIBUTING.md)
 - [Change Log](CHANGELOG.md)
 - [MIT License](LICENSE)
