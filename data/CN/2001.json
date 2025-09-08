@@ -1,0 +1,216 @@
+{
+  "year": 2001,
+  "region": "CN",
+  "dates": [
+     {
+      "date": "2000-12-30",
+      "name": "元旦",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2000-12-31",
+      "name": "元旦",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-01",
+      "name": "元旦",
+      "name_cn": "元旦",
+      "name_en": "New Year's Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-20",
+      "name": "春节补班",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-01-21",
+      "name": "春节补班",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-01-24",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-25",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-26",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-27",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-28",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-29",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-01-30",
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-04-28",
+      "name": "劳动节补班",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-04-29",
+      "name": "劳动节补班",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-05-01",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-05-02",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-05-03",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-05-04",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-05-05",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-05-06",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-05-07",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-09-29",
+      "name": "国庆节补班",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-09-30",
+      "name": "国庆节补班",
+      "name_cn": "国庆节补班",
+      "name_en": "National Day Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2001-10-01",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-10-02",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-10-03",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-10-04",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-10-05",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-10-06",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2001-10-07",
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "public_holiday"
+    }
+  ]
+}
