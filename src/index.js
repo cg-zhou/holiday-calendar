@@ -1,6 +1,6 @@
 class HolidayCalendar {
   constructor(options = {}) {
-    this.version = '1.2.0';
+    this.version = '__VERSION__';
     this.cache = new Map();
     this.dataLoader = options.dataLoader || this.defaultDataLoader;
     this.baseUrl = 'https://unpkg.com/holiday-calendar/data';
