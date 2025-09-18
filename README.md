@@ -7,6 +7,10 @@
 
 标准化的节假日数据集（JSON格式），提供各个地区的法定节假日和调休安排信息。
 
+## 示例
+
+查看 [在线示例](https://cg-zhou.github.io/holiday-calendar/examples) 或 [示例代码](/examples)。
+
 ## 概述
 
 本仓库集中存储以下数据：

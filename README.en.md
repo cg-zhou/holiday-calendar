@@ -7,6 +7,10 @@
 
 A standardized holiday dataset (in JSON format) providing public holidays and working day adjustments for different regions.
 
+## Examples
+
+Check out the [live examples](https://cg-zhou.github.io/holiday-calendar/examples) or [example code](/examples).
+
 ## Overview
 
 This repository serves as a centralized data source for:
