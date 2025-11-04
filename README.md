@@ -64,21 +64,21 @@ npm install holiday-calendar
 
 ``` json
 {
-  "year": 2025,
+  "year": 2026,
   "region": "CN",
   "dates": [
     {
-      "date": "2025-01-01",
-      "name": "New Year's Day",
+      "date": "2026-01-01",
+      "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
-      "date": "2025-01-26",
-      "name": "Spring Festival Workday",
-      "name_cn": "春节补班",
-      "name_en": "Spring Festival Workday",
+      "date": "2026-01-04",
+      "name": "元旦补班",
+      "name_cn": "元旦补班",
+      "name_en": "New Year's Day Workday",
       "type": "transfer_workday"
     }
   ]
@@ -100,34 +100,34 @@ calendar.getIndex().then(index => {
 });
 
 // 获取某天的日期信息
-calendar.getDateInfo('CN', '2025-01-01').then(dateInfo => {
+calendar.getDateInfo('CN', '2026-01-01').then(dateInfo => {
   if (dateInfo) {
     console.log(`${dateInfo.date} 是 ${dateInfo.name_cn}`);
   }
 });
 
 // 获取指定年份的所有日期
-calendar.getDates('CN', 2025).then(dates => {
-  console.log('2025年日期:', dates);
+calendar.getDates('CN', 2026).then(dates => {
+  console.log('2026年日期:', dates);
 });
 
 // 使用过滤器
-calendar.getDates('CN', 2025, {
+calendar.getDates('CN', 2026, {
   type: 'public_holiday',           // 按类型过滤：'public_holiday'(法定节假日) 或 'transfer_workday'(调休工作日)
-  startDate: '2025-01-01',         // 按开始日期过滤
-  endDate: '2025-12-31'           // 按结束日期过滤
+  startDate: '2026-01-01',         // 按开始日期过滤
+  endDate: '2026-12-31'           // 按结束日期过滤
 }).then(dates => {
   console.log('过滤后的日期:', dates);
 });
 
 // 判断是否为工作日，工作日包括 1）非法定节假日的周一至周五，2）调班的周末
-calendar.isWorkday('CN', '2025-01-01').then(isWorkday => {
+calendar.isWorkday('CN', '2026-01-01').then(isWorkday => {
   console.log('是否为工作日:', isWorkday); // false (元旦节假日)
 });
 
 // 判断是否为假期，假期包括 1）法定节假日，2）非调班的周末
-calendar.isHoliday('CN', '2025-01-26').then(isHoliday => {
-  console.log('是否为假期:', isHoliday); // false (春节调休工作日)
+calendar.isHoliday('CN', '2026-01-04').then(isHoliday => {
+  console.log('是否为假期:', isHoliday); // false (元旦调休工作日)
 });
 ```
 
@@ -137,12 +137,12 @@ calendar.isHoliday('CN', '2025-01-26').then(isHoliday => {
 
 1. unpkg：
 ```
-https://unpkg.com/holiday-calendar/data/CN/2025.json
+https://unpkg.com/holiday-calendar/data/CN/2026.json
 ```
 
 2. jsDelivr CDN：
 ```
-https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
+https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2026.json
 ```
 
 ### 浏览器 (CDN)

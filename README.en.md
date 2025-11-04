@@ -64,21 +64,21 @@ Located at `/data/index.json`, contains year ranges for all regions:
 
 ``` json
 {
-  "year": 2025,
+  "year": 2026,
   "region": "CN",
   "dates": [
     {
-      "date": "2025-01-01",
+      "date": "2026-01-01",
       "name": "New Year's Day",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
       "type": "public_holiday"
     },
     {
-      "date": "2025-01-26",
-      "name": "Spring Festival Workday",
-      "name_cn": "春节补班",
-      "name_en": "Spring Festival Workday",
+      "date": "2026-01-04",
+      "name": "New Year's Day Workday",
+      "name_cn": "元旦补班",
+      "name_en": "New Year's Day Workday",
       "type": "transfer_workday"
     }
   ]
@@ -100,34 +100,34 @@ calendar.getIndex().then(index => {
 });
 
 // Get date info for a specific date
-calendar.getDateInfo('CN', '2025-01-01').then(dateInfo => {
+calendar.getDateInfo('CN', '2026-01-01').then(dateInfo => {
   if (dateInfo) {
     console.log(`${dateInfo.date} is ${dateInfo.name_en}`);
   }
 });
 
 // Get all dates for a specific year
-calendar.getDates('CN', 2025).then(dates => {
-  console.log('2025 Dates:', dates);
+calendar.getDates('CN', 2026).then(dates => {
+  console.log('2026 Dates:', dates);
 });
 
 // Get dates with filters
-calendar.getDates('CN', 2025, {
+calendar.getDates('CN', 2026, {
   type: 'public_holiday',           // Filter by type: 'public_holiday' or 'transfer_workday'
-  startDate: '2025-01-01',         // Filter by start date
-  endDate: '2025-12-31'           // Filter by end date
+  startDate: '2026-01-01',         // Filter by start date
+  endDate: '2026-12-31'           // Filter by end date
 }).then(dates => {
   console.log('Filtered dates:', dates);
 });
 
 // Check if date is a workday: includes 1) Mon-Fri except public holidays, 2) transfer working weekends
-calendar.isWorkday('CN', '2025-01-01').then(isWorkday => {
+calendar.isWorkday('CN', '2026-01-01').then(isWorkday => {
   console.log('Is workday:', isWorkday); // false (New Year's Day holiday)
 });
 
 // Check if date is a holiday: includes 1) public holidays, 2) weekends except transfer workdays
-calendar.isHoliday('CN', '2025-01-26').then(isHoliday => {
-  console.log('Is holiday:', isHoliday); // false (Spring Festival workday)
+calendar.isHoliday('CN', '2026-01-04').then(isHoliday => {
+  console.log('Is holiday:', isHoliday); // false (New Year's Day workday)
 });
 
 ```
@@ -138,12 +138,12 @@ Raw JSON files can be accessed via:
 
 1. unpkg:
 ```
-https://unpkg.com/holiday-calendar/data/CN/2025.json
+https://unpkg.com/holiday-calendar/data/CN/2026.json
 ```
 
 2. jsDelivr CDN:
 ```
-https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2025.json
+https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2026.json
 ```
 
 ### Browser (CDN)
