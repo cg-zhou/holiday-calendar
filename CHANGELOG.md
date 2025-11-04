@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-11-04
+
+### Added
+- CN: Added holiday data for 2026 (`data/CN/2026.json`)
+
+### Changed
+- Updated CN region range in `data/index.json` (endYear: 2026)
+- Updated tests to assert CN endYear = 2026
+- Updated documentation examples
+
 ## [1.2.0] - 2025-09-09
 
 ### Added
