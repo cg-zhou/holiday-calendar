@@ -143,6 +143,34 @@
       "type": "public_holiday"
     },
     {
+      "date": "2015-09-03",
+      "name": "抗战胜利纪念日",
+      "name_cn": "抗战胜利纪念日",
+      "name_en": "Victory Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2015-09-04",
+      "name": "抗战胜利纪念日",
+      "name_cn": "抗战胜利纪念日",
+      "name_en": "Victory Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2015-09-05",
+      "name": "抗战胜利纪念日",
+      "name_cn": "抗战胜利纪念日",
+      "name_en": "Victory Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2015-09-06",
+      "name": "抗战胜利纪念日补班",
+      "name_cn": "抗战胜利纪念日补班",
+      "name_en": "Victory Day Workday",
+      "type": "transfer_workday"
+    },
+    {
       "date": "2015-09-26",
       "name": "中秋节补班",
       "name_cn": "中秋节补班",
