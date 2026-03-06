@@ -137,10 +137,17 @@
     },
     {
       "date": "2011-06-04",
-      "name": "端午节补班",
-      "name_cn": "端午节补班",
-      "name_en": "Dragon Boat Festival Workday",
-      "type": "transfer_workday"
+      "name": "端午节",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-06-05",
+      "name": "端午节",
+      "name_cn": "端午节",
+      "name_en": "Dragon Boat Festival",
+      "type": "public_holiday"
     },
     {
       "date": "2011-06-06",
@@ -151,10 +158,17 @@
     },
     {
       "date": "2011-09-10",
-      "name": "中秋节补班",
-      "name_cn": "中秋节补班",
-      "name_en": "Mid-Autumn Festival Workday",
-      "type": "transfer_workday"
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2011-09-11",
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
     },
     {
       "date": "2011-09-12",
