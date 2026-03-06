@@ -125,6 +125,20 @@ async function runTests(options = {}) {
     assert(data2013.dates.find(d => d.date === '2013-02-09' && d.type === 'public_holiday'), '2013-02-09 should be public holiday');
     assert(data2013.dates.find(d => d.date === '2013-02-17' && d.type === 'transfer_workday'), '2013-02-17 should be transfer workday');
 
+    const data2012 = await calendar.load('CN', 2012);
+    assert(data2012.dates.find(d => d.date === '2012-04-01' && d.type === 'transfer_workday'), '2012-04-01 should be transfer workday');
+
+    const data2011 = await calendar.load('CN', 2011);
+    assert(data2011.dates.find(d => d.date === '2011-06-04' && d.type === 'public_holiday'), '2011-06-04 should be public holiday');
+    assert(data2011.dates.find(d => d.date === '2011-06-05' && d.type === 'public_holiday'), '2011-06-05 should be public holiday');
+    assert(data2011.dates.find(d => d.date === '2011-09-10' && d.type === 'public_holiday'), '2011-09-10 should be public holiday');
+    assert(data2011.dates.find(d => d.date === '2011-09-11' && d.type === 'public_holiday'), '2011-09-11 should be public holiday');
+
+    const data2010 = await calendar.load('CN', 2010);
+    assert(data2010.dates.find(d => d.date === '2010-04-03' && d.type === 'public_holiday'), '2010-04-03 should be public holiday');
+    assert(data2010.dates.find(d => d.date === '2010-04-04' && d.type === 'public_holiday'), '2010-04-04 should be public holiday');
+    assert(data2010.dates.find(d => d.date === '2010-09-26' && d.type === 'transfer_workday' && d.name_cn === '国庆节补班'), '2010-09-26 should be National Day transfer workday');
+
     // Test getting index
     console.log('Testing index information...');
     const index = await calendar.getIndex();
