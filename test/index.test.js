@@ -111,6 +111,20 @@ async function runTests(options = {}) {
       assert(data2025.dates.find(d => d.date === date && d.type === type), `${date} should be ${type}`);
     });
 
+    // Test historical regression dates
+    console.log('Testing historical regression dates...');
+    const data2015 = await calendar.load('CN', 2015);
+    assert(data2015.dates.find(d => d.date === '2015-09-03' && d.type === 'public_holiday'), '2015-09-03 should be public holiday');
+    assert(data2015.dates.find(d => d.date === '2015-09-04' && d.type === 'public_holiday'), '2015-09-04 should be public holiday');
+    assert(data2015.dates.find(d => d.date === '2015-09-05' && d.type === 'public_holiday'), '2015-09-05 should be public holiday');
+    assert(data2015.dates.find(d => d.date === '2015-09-06' && d.type === 'transfer_workday'), '2015-09-06 should be transfer workday');
+    assert(!data2015.dates.find(d => d.date === '2015-09-26'), '2015-09-26 should not be an adjusted holiday/workday');
+    assert(data2015.dates.find(d => d.date === '2015-09-27' && d.type === 'public_holiday'), '2015-09-27 should be public holiday');
+
+    const data2013 = await calendar.load('CN', 2013);
+    assert(data2013.dates.find(d => d.date === '2013-02-09' && d.type === 'public_holiday'), '2013-02-09 should be public holiday');
+    assert(data2013.dates.find(d => d.date === '2013-02-17' && d.type === 'transfer_workday'), '2013-02-17 should be transfer workday');
+
     // Test getting index
     console.log('Testing index information...');
     const index = await calendar.getIndex();
