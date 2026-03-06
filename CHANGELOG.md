@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.1] - 2026-03-06
+
+### Fixed
+- Corrected 2013 Spring Festival data
+- Corrected 2015 Mid-Autumn Festival data
+
+### Added
+- Added 2015 V-Day (70th anniversary) holiday data
+- Added regression checks for 2013 and 2015 data
+
 ## [1.3.0] - 2025-11-04
 
 ### Added
