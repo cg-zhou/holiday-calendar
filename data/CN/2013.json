@@ -39,10 +39,10 @@
     },
     {
       "date": "2013-02-09",
-      "name": "春节补班",
-      "name_cn": "春节补班",
-      "name_en": "Spring Festival Workday",
-      "type": "transfer_workday"
+      "name": "春节",
+      "name_cn": "春节",
+      "name_en": "Spring Festival",
+      "type": "public_holiday"
     },
     {
       "date": "2013-02-10",
@@ -88,6 +88,13 @@
     },
     {
       "date": "2013-02-16",
+      "name": "春节补班",
+      "name_cn": "春节补班",
+      "name_en": "Spring Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2013-02-17",
       "name": "春节补班",
       "name_cn": "春节补班",
       "name_en": "Spring Festival Workday",
@@ -157,6 +164,20 @@
       "type": "public_holiday"
     },
     {
+      "date": "2013-06-08",
+      "name": "端午节补班",
+      "name_cn": "端午节补班",
+      "name_en": "Dragon Boat Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
+      "date": "2013-06-09",
+      "name": "端午节补班",
+      "name_cn": "端午节补班",
+      "name_en": "Dragon Boat Festival Workday",
+      "type": "transfer_workday"
+    },
+    {
       "date": "2013-06-10",
       "name": "端午节",
       "name_cn": "端午节",
@@ -176,20 +197,6 @@
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
       "type": "public_holiday"
-    },
-    {
-      "date": "2013-06-08",
-      "name": "端午节补班",
-      "name_cn": "端午节补班",
-      "name_en": "Dragon Boat Festival Workday",
-      "type": "transfer_workday"
-    },
-    {
-      "date": "2013-06-09",
-      "name": "端午节补班",
-      "name_cn": "端午节补班",
-      "name_en": "Dragon Boat Festival Workday",
-      "type": "transfer_workday"
     },
     {
       "date": "2013-09-19",
