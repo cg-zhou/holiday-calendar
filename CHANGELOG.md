@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.3] - 2026-03-06
+
+### Fixed
+- Corrected data in 2019
+
 ## [1.3.2] - 2026-03-06
 
 ### Fixed
