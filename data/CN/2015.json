@@ -172,10 +172,10 @@
     },
     {
       "date": "2015-09-26",
-      "name": "中秋节补班",
-      "name_cn": "中秋节补班",
-      "name_en": "Mid-Autumn Festival Workday",
-      "type": "transfer_workday"
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "public_holiday"
     },
     {
       "date": "2015-09-27",
