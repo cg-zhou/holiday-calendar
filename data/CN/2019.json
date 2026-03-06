@@ -115,11 +115,46 @@
       "type": "public_holiday"
     },
     {
+      "date": "2019-04-28",
+      "name": "劳动节补班",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
+    },
+    {
       "date": "2019-05-01",
       "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
       "type": "public_holiday"
+    },
+    {
+      "date": "2019-05-02",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2019-05-03",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2019-05-04",
+      "name": "劳动节",
+      "name_cn": "劳动节",
+      "name_en": "Labour Day",
+      "type": "public_holiday"
+    },
+    {
+      "date": "2019-05-05",
+      "name": "劳动节补班",
+      "name_cn": "劳动节补班",
+      "name_en": "Labour Day Workday",
+      "type": "transfer_workday"
     },
     {
       "date": "2019-06-07",
