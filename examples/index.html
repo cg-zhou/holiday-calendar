@@ -106,7 +106,7 @@
       // Convert holiday data to calendar events
       function convertToEvents(dates, region, langKey = 'name') {
         return dates.map(date => ({
-          title: `[${region}] ${date[langKey]}`,
+          title: `[${region}] ${date.type === 'public_holiday' ? (langKey === 'name_en' ? 'Holiday: ' : '休假：') : ''}${date[langKey]}`,
           start: date.date,
           className: date.type === 'transfer_workday' ? 'transfer-workday' : `holiday-${region}`,
           extendedProps: {
