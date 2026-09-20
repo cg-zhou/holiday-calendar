@@ -175,6 +175,10 @@ async function runTests(options = {}) {
     // Test normal weekend (Sunday)
     assert(await calendar.isWorkday('CN', '2025-01-19') === false, '2025-01-19 should not be a workday');
     assert(await calendar.isHoliday('CN', '2025-01-19') === true, '2025-01-19 should be a holiday');
+
+    // Test normal weekend (Saturday)
+    assert(await calendar.isWorkday('CN', '2025-01-18') === false, '2025-01-18 should not be a workday');
+    assert(await calendar.isHoliday('CN', '2025-01-18') === true, '2025-01-18 should be a holiday');
     
     // Test public holiday (New Year's Day)
     assert(await calendar.isWorkday('CN', '2025-01-01') === false, '2025-01-01 should not be a workday');

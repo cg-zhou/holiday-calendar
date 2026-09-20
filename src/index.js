@@ -93,7 +93,7 @@ class HolidayCalendar {
     const dateInfo = await this.getDateInfo(region, date);
     
     // Get day of week (0 = Sunday, 6 = Saturday)
-    const dayOfWeek = new Date(date).getDay();
+    const dayOfWeek = new Date(`${date}T00:00:00Z`).getUTCDay();
     
     // If it's a transfer workday, it's a workday
     if (dateInfo?.type === 'transfer_workday') {
