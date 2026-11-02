@@ -8,7 +8,11 @@ const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
 const version = packageJson.version;
 
 let indexContent = fs.readFileSync(indexPath, 'utf8');
-indexContent = indexContent.replace(/__VERSION__/g, version);
+const versionAssignment = /this\.version = '[^']*';/;
+if (!versionAssignment.test(indexContent)) {
+  throw new Error('Cannot find HolidayCalendar version assignment');
+}
+indexContent = indexContent.replace(versionAssignment, `this.version = '${version}';`);
 
 fs.writeFileSync(indexPath, indexContent, 'utf8');
 

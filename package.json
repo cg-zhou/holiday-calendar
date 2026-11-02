@@ -15,7 +15,7 @@
     "build:js": "node scripts/inject-version.js && terser src/index.js -c -m -o src/index.min.js",
     "build:json": "node scripts/minify-json.js",
     "build": "npm run build:js && npm run build:json",
-    "prepare": "npm run build && npm run test"
+    "prepack": "npm run build && npm run test"
   },
   "keywords": [
     "holiday",

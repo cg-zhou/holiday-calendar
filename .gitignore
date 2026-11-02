@@ -1,6 +1,5 @@
 # Dependencies
 node_modules/
-package-lock.json
 
 # Build
 dist/
@@ -19,4 +18,4 @@ npm-debug.log*
 
 # System Files
 .DS_Store
-Thumbs.db 
+Thumbs.db

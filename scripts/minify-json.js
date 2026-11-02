@@ -83,6 +83,7 @@ function main() {
       minifyJson(file);
     } catch (error) {
       console.error(`Error processing ${file}:`, error);
+      process.exitCode = 1;
     }
   });
 }

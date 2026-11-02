@@ -1,0 +1,46 @@
+name: Publish to npm
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: npm-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          package-manager-cache: false
+      - run: npm install --global npm@12.2.1
+      - name: Verify release version
+        run: |
+          node <<'NODE'
+          const { version } = require('./package.json');
+          const tag = process.env.GITHUB_REF_NAME;
+          if (!/^\d+\.\d+\.\d+$/.test(version) || tag !== `v${version}`) {
+            throw new Error(`Stable release tag ${tag} must match package.json version v${version}`);
+          }
+          NODE
+      - run: npm ci --ignore-scripts
+      - run: npm run lint
+      - run: npm run build
+      - run: npm test
+      - run: node scripts/check-package.js
+      - name: Publish with npm trusted publishing
+        run: npm publish --ignore-scripts --access public

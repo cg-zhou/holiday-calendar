@@ -156,6 +156,16 @@ https://gcore.jsdelivr.net/gh/cg-zhou/holiday-calendar@main/data/CN/2026.json
 
 > **重要提示**：对于中国大陆用户，考虑到 CDN 服务的稳定性，建议将 `data` 目录下的 JSON 数据部署到您自己的服务器上，以确保更可靠的访问体验。
 
+## 检查与发布
+
+提交和 PR 自动执行检查；推送 `v*` 标签后自动发布 npm。
+
+```bash
+npm version patch
+# 将 vX.Y.Z 替换为上一步输出的标签
+git push --atomic origin main vX.Y.Z
+```
+
 ## 链接与文档
 
 - GitHub: [cg-zhou/holiday-calendar](https://github.com/cg-zhou/holiday-calendar)
