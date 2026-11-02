@@ -147,6 +147,30 @@ async function runTests(options = {}) {
     assert(data2019.dates.find(d => d.date === '2019-04-28' && d.type === 'transfer_workday'), '2019-04-28 should be transfer workday');
     assert(data2019.dates.find(d => d.date === '2019-05-05' && d.type === 'transfer_workday'), '2019-05-05 should be transfer workday');
 
+    // Official 2027 list: https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html
+    console.log('Testing Japan holiday data...');
+    const jp2027 = await calendar.load('JP', 2027);
+    assert.strictEqual(jp2027.year, 2027);
+    assert.strictEqual(jp2027.region, 'JP');
+    assert.deepStrictEqual(jp2027.dates.map(d => d.date), [
+      '2027-01-01', '2027-01-11', '2027-02-11', '2027-02-23',
+      '2027-03-21', '2027-03-22', '2027-04-29', '2027-05-03',
+      '2027-05-04', '2027-05-05', '2027-07-19', '2027-08-11',
+      '2027-09-20', '2027-09-23', '2027-10-11', '2027-11-03',
+      '2027-11-23'
+    ]);
+    assert(jp2027.dates.every(d => d.type === 'public_holiday' && d.name && d.name_cn && d.name_en));
+    const substituteHoliday = await calendar.getDateInfo('JP', '2027-03-22');
+    assert.strictEqual(substituteHoliday.name, '春分の日 振替休日');
+    assert.strictEqual(await calendar.isHoliday('JP', '2027-03-22'), true);
+    assert.strictEqual(await calendar.isWorkday('JP', '2027-03-22'), false);
+    assert.strictEqual(await calendar.isWorkday('JP', '2027-03-23'), true);
+    // NAOJ 2025 calendar: https://www.nao.ac.jp/news/topics/2024/20240201-rekiyoko.html
+    assert.strictEqual((await calendar.getDateInfo('JP', '2025-03-20')).name, '春分の日');
+    assert.strictEqual(await calendar.getDateInfo('JP', '2025-03-21'), null);
+    assert.strictEqual(await calendar.isWorkday('JP', '2025-03-20'), false);
+    assert.strictEqual(await calendar.isWorkday('JP', '2025-03-21'), true);
+
     // Test getting index
     console.log('Testing index information...');
     const index = await calendar.getIndex();
@@ -163,7 +187,7 @@ async function runTests(options = {}) {
     const jpRegion = index.regions.find(r => r.name === 'JP');
     assert(jpRegion, 'Index should contain JP region');
     assert(jpRegion.startYear === 2000, 'JP should start from 2000');
-    assert(jpRegion.endYear === 2026, 'JP should end at 2026');
+    assert(jpRegion.endYear === 2027, 'JP should end at 2027');
 
     // Test isWorkday and isHoliday functions
     console.log('Testing isWorkday and isHoliday...');

@@ -38,7 +38,7 @@
       "type": "public_holiday"
     },
     {
-      "date": "2025-03-21",
+      "date": "2025-03-20",
       "name": "春分の日",
       "name_cn": "春分日",
       "name_en": "Vernal Equinox Day",
@@ -129,4 +129,4 @@
       "type": "public_holiday"
     }
   ]
-} 
+}

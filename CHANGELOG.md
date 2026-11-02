@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 2026-11-02
+
+### Added
+- JP: Added 2027 holiday data, including the March 22 substitute holiday, from the [Cabinet Office](https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html).
+- Extended the JP index range to 2027 and added regression tests.
+
+### Fixed
+- JP: Corrected the 2025 Vernal Equinox Day from March 21 to March 20, per the [NAOJ calendar](https://www.nao.ac.jp/news/topics/2024/20240201-rekiyoko.html).
+
 ## [1.3.4] - 2026-11-02
 
 ### Added
