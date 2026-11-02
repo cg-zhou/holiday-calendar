@@ -4,9 +4,12 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 
-// Invoke npm through Node so this also works with npm.cmd on Windows.
+// Unix resolves npm from PATH; Windows needs Node to invoke npm-cli.js.
 const npmCli = process.env.npm_execpath || path.join(path.dirname(process.execPath), 'node_modules/npm/bin/npm-cli.js');
-const [pack] = JSON.parse(execFileSync(process.execPath, [npmCli, 'pack', '--ignore-scripts', '--dry-run', '--json'], { encoding: 'utf8' }));
+const args = ['pack', '--ignore-scripts', '--dry-run', '--json'];
+const command = process.platform === 'win32' ? process.execPath : 'npm';
+const commandArgs = process.platform === 'win32' ? [npmCli, ...args] : args;
+const [pack] = JSON.parse(execFileSync(command, commandArgs, { encoding: 'utf8' }));
 const paths = new Set(pack.files.map(file => file.path));
 const { version } = require('../package.json');
 const root = path.join(__dirname, '..');
