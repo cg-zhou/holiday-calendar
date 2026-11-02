@@ -14,8 +14,8 @@ Check out the [live examples](https://cg-zhou.github.io/holiday-calendar/example
 ## Overview
 
 This repository serves as a centralized data source for:
-- 📅 Public holidays
-- 🏢 Working days
+- Public holidays
+- Working days
 
 ## Data Sources
 
