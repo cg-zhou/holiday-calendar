@@ -9,7 +9,8 @@ const npmCli = process.env.npm_execpath || path.join(path.dirname(process.execPa
 const args = ['pack', '--ignore-scripts', '--dry-run', '--json'];
 const command = process.platform === 'win32' ? process.execPath : 'npm';
 const commandArgs = process.platform === 'win32' ? [npmCli, ...args] : args;
-const [pack] = JSON.parse(execFileSync(command, commandArgs, { encoding: 'utf8' }));
+const report = JSON.parse(execFileSync(command, commandArgs, { encoding: 'utf8' }));
+const [pack] = Array.isArray(report) ? report : Object.values(report);
 const paths = new Set(pack.files.map(file => file.path));
 const { version } = require('../package.json');
 const root = path.join(__dirname, '..');
