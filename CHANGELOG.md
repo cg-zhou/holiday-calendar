@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.4] - 2026-11-02
+
+### Added
+- Added automated package checks and tag-triggered npm publishing.
+
+### Fixed
+- Keep the runtime version in sync across repeated builds and version upgrades.
+- Fail the build when JSON minification fails.
+
 ## [1.3.3] - 2026-03-06
 
 ### Fixed
