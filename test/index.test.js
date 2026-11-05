@@ -181,7 +181,7 @@ async function runTests(options = {}) {
     const cnRegion = index.regions.find(r => r.name === 'CN');
     assert(cnRegion, 'Index should contain CN region');
     assert(cnRegion.startYear === 2000, 'CN should start from 2000');
-    assert(cnRegion.endYear === 2026, 'CN should end at 2026');
+    assert(cnRegion.endYear === 2027, 'CN should end at 2027');
 
     // Test JP region info
     const jpRegion = index.regions.find(r => r.name === 'JP');

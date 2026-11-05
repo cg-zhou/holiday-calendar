@@ -47,7 +47,7 @@ npm install holiday-calendar
     {
       "name": "CN",
       "startYear": 2002,
-      "endYear": 2026
+      "endYear": 2027
     },
     {
       "name": "JP",

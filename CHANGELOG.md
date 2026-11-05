@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.5.0] - 2026-11-05
+
+### Added
+- CN: Added 2027 holiday and adjusted workday data based on the notice supplied by the user (November 5, 2026).
+- Extended the CN index range to 2027.
+
 ## [1.4.0] - 2026-11-02
 
 ### Added

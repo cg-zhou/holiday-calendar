@@ -47,7 +47,7 @@ Located at `/data/index.json`, contains year ranges for all regions:
     {
       "name": "CN",
       "startYear": 2002,
-      "endYear": 2026
+      "endYear": 2027
     },
     {
       "name": "JP",
